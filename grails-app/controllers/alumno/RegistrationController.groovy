@@ -26,6 +26,7 @@ class RegistrationController {
         def registrationInstance = new Registration(params)
         registrationInstance.ipAddress = request.getRemoteAddr()
         if (!registrationInstance.save(flush: true)) {
+            studentInstance.save(flush: true)
             render(view: "create", model: [registrationInstance: registrationInstance])
             return
         }
