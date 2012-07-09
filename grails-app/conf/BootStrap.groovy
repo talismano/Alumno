@@ -16,7 +16,7 @@ class BootStrap {
 
         def adminRole = Role.findByAuthority("ROLE_ADMIN") ?: new Role(authority: "ROLE_ADMIN").save()
 
-        if (!adminUser.authorities.contains(ROLE_ADMIN)) {
+        if (!adminUser.authorities.contains("ROLE_ADMIN")) {
             UserRole.create adminUser, adminRole
         }
 
