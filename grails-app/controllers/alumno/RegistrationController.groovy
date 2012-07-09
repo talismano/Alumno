@@ -1,6 +1,7 @@
 package alumno
 
 import org.springframework.dao.DataIntegrityViolationException
+import grails.plugins.springsecurity.Secured
 
 class RegistrationController {
 
@@ -10,6 +11,7 @@ class RegistrationController {
         redirect(action: "list", params: params)
     }
 
+    @Secured(['ROLE_ADMIN'])
     def list() {
         params.max = Math.min(params.max ? params.int('max') : 10, 100)
         [registrationInstanceList: Registration.list(params), registrationInstanceTotal: Registration.count()]
@@ -17,6 +19,7 @@ class RegistrationController {
 
     def create() {
         [registrationInstance: new Registration(params)]
+        [studentInstance: new Student()]
     }
 
     def save() {
@@ -83,6 +86,7 @@ class RegistrationController {
         redirect(action: "show", id: registrationInstance.id)
     }
 
+    @Secured(['ROLE_ADMIN'])
     def delete() {
         def registrationInstance = Registration.get(params.id)
         if (!registrationInstance) {
