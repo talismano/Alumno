@@ -5,6 +5,7 @@ class Student {
     static constraints = {
         phoneNumber(nullable: true)
         email(nullable: true)
+        grade(range:9..12)
       }
 
     String firstName

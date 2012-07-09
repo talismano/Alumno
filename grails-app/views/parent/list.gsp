@@ -24,17 +24,15 @@
 				<thead>
 					<tr>
 					
-						<g:sortableColumn property="email" title="${message(code: 'parent.email.label', default: 'Email')}" />
-					
 						<g:sortableColumn property="firstName" title="${message(code: 'parent.firstName.label', default: 'First Name')}" />
-					
-						<g:sortableColumn property="grade" title="${message(code: 'parent.grade.label', default: 'Grade')}" />
-					
-						<th><g:message code="parent.household.label" default="Household" /></th>
 					
 						<g:sortableColumn property="lastName" title="${message(code: 'parent.lastName.label', default: 'Last Name')}" />
 					
 						<g:sortableColumn property="phoneNumber" title="${message(code: 'parent.phoneNumber.label', default: 'Phone Number')}" />
+					
+						<g:sortableColumn property="email" title="${message(code: 'parent.email.label', default: 'Email')}" />
+					
+						<th><g:message code="parent.household.label" default="Household" /></th>
 					
 					</tr>
 				</thead>
@@ -42,17 +40,15 @@
 				<g:each in="${parentInstanceList}" status="i" var="parentInstance">
 					<tr class="${(i % 2) == 0 ? 'even' : 'odd'}">
 					
-						<td><g:link action="show" id="${parentInstance.id}">${fieldValue(bean: parentInstance, field: "email")}</g:link></td>
-					
-						<td>${fieldValue(bean: parentInstance, field: "firstName")}</td>
-					
-						<td>${fieldValue(bean: parentInstance, field: "grade")}</td>
-					
-						<td>${fieldValue(bean: parentInstance, field: "household")}</td>
+						<td><g:link action="show" id="${parentInstance.id}">${fieldValue(bean: parentInstance, field: "firstName")}</g:link></td>
 					
 						<td>${fieldValue(bean: parentInstance, field: "lastName")}</td>
 					
 						<td>${fieldValue(bean: parentInstance, field: "phoneNumber")}</td>
+					
+						<td>${fieldValue(bean: parentInstance, field: "email")}</td>
+					
+						<td>${fieldValue(bean: parentInstance, field: "household")}</td>
 					
 					</tr>
 				</g:each>

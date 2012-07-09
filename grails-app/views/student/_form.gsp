@@ -2,6 +2,14 @@
 
 
 
+<div class="fieldcontain ${hasErrors(bean: studentInstance, field: 'phoneNumber', 'error')} ">
+	<label for="phoneNumber">
+		<g:message code="student.phoneNumber.label" default="Phone Number" />
+		
+	</label>
+	<g:textField name="phoneNumber" value="${studentInstance?.phoneNumber}"/>
+</div>
+
 <div class="fieldcontain ${hasErrors(bean: studentInstance, field: 'email', 'error')} ">
 	<label for="email">
 		<g:message code="student.email.label" default="Email" />
@@ -32,14 +40,6 @@
 		
 	</label>
 	<g:textField name="lastName" value="${studentInstance?.lastName}"/>
-</div>
-
-<div class="fieldcontain ${hasErrors(bean: studentInstance, field: 'phoneNumber', 'error')} ">
-	<label for="phoneNumber">
-		<g:message code="student.phoneNumber.label" default="Phone Number" />
-		
-	</label>
-	<g:textField name="phoneNumber" value="${studentInstance?.phoneNumber}"/>
 </div>
 
 <div class="fieldcontain ${hasErrors(bean: studentInstance, field: 'registration', 'error')} required">

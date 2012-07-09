@@ -23,38 +23,11 @@
 			</g:if>
 			<ol class="property-list parent">
 			
-				<g:if test="${parentInstance?.email}">
-				<li class="fieldcontain">
-					<span id="email-label" class="property-label"><g:message code="parent.email.label" default="Email" /></span>
-					
-						<span class="property-value" aria-labelledby="email-label"><g:fieldValue bean="${parentInstance}" field="email"/></span>
-					
-				</li>
-				</g:if>
-			
 				<g:if test="${parentInstance?.firstName}">
 				<li class="fieldcontain">
 					<span id="firstName-label" class="property-label"><g:message code="parent.firstName.label" default="First Name" /></span>
 					
 						<span class="property-value" aria-labelledby="firstName-label"><g:fieldValue bean="${parentInstance}" field="firstName"/></span>
-					
-				</li>
-				</g:if>
-			
-				<g:if test="${parentInstance?.grade}">
-				<li class="fieldcontain">
-					<span id="grade-label" class="property-label"><g:message code="parent.grade.label" default="Grade" /></span>
-					
-						<span class="property-value" aria-labelledby="grade-label"><g:fieldValue bean="${parentInstance}" field="grade"/></span>
-					
-				</li>
-				</g:if>
-			
-				<g:if test="${parentInstance?.household}">
-				<li class="fieldcontain">
-					<span id="household-label" class="property-label"><g:message code="parent.household.label" default="Household" /></span>
-					
-						<span class="property-value" aria-labelledby="household-label"><g:link controller="household" action="show" id="${parentInstance?.household?.id}">${parentInstance?.household?.encodeAsHTML()}</g:link></span>
 					
 				</li>
 				</g:if>
@@ -73,6 +46,24 @@
 					<span id="phoneNumber-label" class="property-label"><g:message code="parent.phoneNumber.label" default="Phone Number" /></span>
 					
 						<span class="property-value" aria-labelledby="phoneNumber-label"><g:fieldValue bean="${parentInstance}" field="phoneNumber"/></span>
+					
+				</li>
+				</g:if>
+			
+				<g:if test="${parentInstance?.email}">
+				<li class="fieldcontain">
+					<span id="email-label" class="property-label"><g:message code="parent.email.label" default="Email" /></span>
+					
+						<span class="property-value" aria-labelledby="email-label"><g:fieldValue bean="${parentInstance}" field="email"/></span>
+					
+				</li>
+				</g:if>
+			
+				<g:if test="${parentInstance?.household}">
+				<li class="fieldcontain">
+					<span id="household-label" class="property-label"><g:message code="parent.household.label" default="Household" /></span>
+					
+						<span class="property-value" aria-labelledby="household-label"><g:link controller="household" action="show" id="${parentInstance?.household?.id}">${parentInstance?.household?.encodeAsHTML()}</g:link></span>
 					
 				</li>
 				</g:if>

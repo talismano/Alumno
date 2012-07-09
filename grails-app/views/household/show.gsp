@@ -41,13 +41,20 @@
 				</li>
 				</g:if>
 			
-				<g:if test="${householdInstance?.parents}">
+				<g:if test="${householdInstance?.state}">
 				<li class="fieldcontain">
-					<span id="parents-label" class="property-label"><g:message code="household.parents.label" default="Parents" /></span>
+					<span id="state-label" class="property-label"><g:message code="household.state.label" default="State" /></span>
 					
-						<g:each in="${householdInstance.parents}" var="p">
-						<span class="property-value" aria-labelledby="parents-label"><g:link controller="parent" action="show" id="${p.id}">${p?.encodeAsHTML()}</g:link></span>
-						</g:each>
+						<span class="property-value" aria-labelledby="state-label"><g:fieldValue bean="${householdInstance}" field="state"/></span>
+					
+				</li>
+				</g:if>
+			
+				<g:if test="${householdInstance?.zip}">
+				<li class="fieldcontain">
+					<span id="zip-label" class="property-label"><g:message code="household.zip.label" default="Zip" /></span>
+					
+						<span class="property-value" aria-labelledby="zip-label"><g:fieldValue bean="${householdInstance}" field="zip"/></span>
 					
 				</li>
 				</g:if>
@@ -57,6 +64,17 @@
 					<span id="phoneNumber-label" class="property-label"><g:message code="household.phoneNumber.label" default="Phone Number" /></span>
 					
 						<span class="property-value" aria-labelledby="phoneNumber-label"><g:fieldValue bean="${householdInstance}" field="phoneNumber"/></span>
+					
+				</li>
+				</g:if>
+			
+				<g:if test="${householdInstance?.parents}">
+				<li class="fieldcontain">
+					<span id="parents-label" class="property-label"><g:message code="household.parents.label" default="Parents" /></span>
+					
+						<g:each in="${householdInstance.parents}" var="p">
+						<span class="property-value" aria-labelledby="parents-label"><g:link controller="parent" action="show" id="${p.id}">${p?.encodeAsHTML()}</g:link></span>
+						</g:each>
 					
 				</li>
 				</g:if>
@@ -75,24 +93,6 @@
 					<span id="safehome-label" class="property-label"><g:message code="household.safehome.label" default="Safehome" /></span>
 					
 						<span class="property-value" aria-labelledby="safehome-label"><g:formatBoolean boolean="${householdInstance?.safehome}" /></span>
-					
-				</li>
-				</g:if>
-			
-				<g:if test="${householdInstance?.state}">
-				<li class="fieldcontain">
-					<span id="state-label" class="property-label"><g:message code="household.state.label" default="State" /></span>
-					
-						<span class="property-value" aria-labelledby="state-label"><g:fieldValue bean="${householdInstance}" field="state"/></span>
-					
-				</li>
-				</g:if>
-			
-				<g:if test="${householdInstance?.zip}">
-				<li class="fieldcontain">
-					<span id="zip-label" class="property-label"><g:message code="household.zip.label" default="Zip" /></span>
-					
-						<span class="property-value" aria-labelledby="zip-label"><g:fieldValue bean="${householdInstance}" field="zip"/></span>
 					
 				</li>
 				</g:if>

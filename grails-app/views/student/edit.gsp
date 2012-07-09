@@ -31,7 +31,7 @@
 				<g:hiddenField name="id" value="${studentInstance?.id}" />
 				<g:hiddenField name="version" value="${studentInstance?.version}" />
 				<fieldset class="form">
-					<g:render template="form"/>
+					<f:all bean="studentInstance"/>
 				</fieldset>
 				<fieldset class="buttons">
 					<g:actionSubmit class="save" action="update" value="${message(code: 'default.button.update.label', default: 'Update')}" />

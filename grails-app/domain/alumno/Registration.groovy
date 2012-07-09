@@ -13,4 +13,10 @@ class Registration {
             households: Household
     ]
 
+    @Override
+    public String toString ( ) {
+        "$id - Created on ${dateCreated?.format('MM-dd, HH:mm:ss')?:'Unknown'} - IP Address:${ipAddress}"
+    }
+
+
 }

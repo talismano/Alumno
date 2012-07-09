@@ -19,6 +19,14 @@
 
 </div>
 
+<f:with bean="studentInstance">
+    <f:field property="firstName"/>
+    <f:field property="lastName"/>
+    <f:field property="grade"/>
+    <f:field property="phoneNumber"/>
+    <f:field property="email"/>
+</f:with>
+
 <div class="fieldcontain ${hasErrors(bean: registrationInstance, field: 'students', 'error')} ">
 	<label for="students">
 		<g:message code="registration.students.label" default="Students" />

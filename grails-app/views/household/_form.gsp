@@ -18,6 +18,30 @@
 	<g:textField name="city" value="${householdInstance?.city}"/>
 </div>
 
+<div class="fieldcontain ${hasErrors(bean: householdInstance, field: 'state', 'error')} ">
+	<label for="state">
+		<g:message code="household.state.label" default="State" />
+		
+	</label>
+	<g:textField name="state" value="${householdInstance?.state}"/>
+</div>
+
+<div class="fieldcontain ${hasErrors(bean: householdInstance, field: 'zip', 'error')} ">
+	<label for="zip">
+		<g:message code="household.zip.label" default="Zip" />
+		
+	</label>
+	<g:field type="number" name="zip" value="${fieldValue(bean: householdInstance, field: 'zip')}"/>
+</div>
+
+<div class="fieldcontain ${hasErrors(bean: householdInstance, field: 'phoneNumber', 'error')} ">
+	<label for="phoneNumber">
+		<g:message code="household.phoneNumber.label" default="Phone Number" />
+		
+	</label>
+	<g:textField name="phoneNumber" value="${householdInstance?.phoneNumber}"/>
+</div>
+
 <div class="fieldcontain ${hasErrors(bean: householdInstance, field: 'parents', 'error')} ">
 	<label for="parents">
 		<g:message code="household.parents.label" default="Parents" />
@@ -35,14 +59,6 @@
 
 </div>
 
-<div class="fieldcontain ${hasErrors(bean: householdInstance, field: 'phoneNumber', 'error')} ">
-	<label for="phoneNumber">
-		<g:message code="household.phoneNumber.label" default="Phone Number" />
-		
-	</label>
-	<g:textField name="phoneNumber" value="${householdInstance?.phoneNumber}"/>
-</div>
-
 <div class="fieldcontain ${hasErrors(bean: householdInstance, field: 'registration', 'error')} required">
 	<label for="registration">
 		<g:message code="household.registration.label" default="Registration" />
@@ -57,21 +73,5 @@
 		
 	</label>
 	<g:checkBox name="safehome" value="${householdInstance?.safehome}" />
-</div>
-
-<div class="fieldcontain ${hasErrors(bean: householdInstance, field: 'state', 'error')} ">
-	<label for="state">
-		<g:message code="household.state.label" default="State" />
-		
-	</label>
-	<g:textField name="state" value="${householdInstance?.state}"/>
-</div>
-
-<div class="fieldcontain ${hasErrors(bean: householdInstance, field: 'zip', 'error')} required">
-	<label for="zip">
-		<g:message code="household.zip.label" default="Zip" />
-		<span class="required-indicator">*</span>
-	</label>
-	<g:field type="number" name="zip" required="" value="${fieldValue(bean: householdInstance, field: 'zip')}"/>
 </div>
 

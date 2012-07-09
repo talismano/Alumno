@@ -28,13 +28,13 @@
 					
 						<g:sortableColumn property="city" title="${message(code: 'household.city.label', default: 'City')}" />
 					
+						<g:sortableColumn property="state" title="${message(code: 'household.state.label', default: 'State')}" />
+					
+						<g:sortableColumn property="zip" title="${message(code: 'household.zip.label', default: 'Zip')}" />
+					
 						<g:sortableColumn property="phoneNumber" title="${message(code: 'household.phoneNumber.label', default: 'Phone Number')}" />
 					
 						<th><g:message code="household.registration.label" default="Registration" /></th>
-					
-						<g:sortableColumn property="safehome" title="${message(code: 'household.safehome.label', default: 'Safehome')}" />
-					
-						<g:sortableColumn property="state" title="${message(code: 'household.state.label', default: 'State')}" />
 					
 					</tr>
 				</thead>
@@ -46,13 +46,13 @@
 					
 						<td>${fieldValue(bean: householdInstance, field: "city")}</td>
 					
+						<td>${fieldValue(bean: householdInstance, field: "state")}</td>
+					
+						<td>${fieldValue(bean: householdInstance, field: "zip")}</td>
+					
 						<td>${fieldValue(bean: householdInstance, field: "phoneNumber")}</td>
 					
 						<td>${fieldValue(bean: householdInstance, field: "registration")}</td>
-					
-						<td><g:formatBoolean boolean="${householdInstance.safehome}" /></td>
-					
-						<td>${fieldValue(bean: householdInstance, field: "state")}</td>
 					
 					</tr>
 				</g:each>

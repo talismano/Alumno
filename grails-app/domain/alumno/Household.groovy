@@ -25,4 +25,5 @@ class Household {
     static hasMany = [
             parents: Parent
     ]
+
 }

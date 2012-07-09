@@ -23,6 +23,15 @@
 			</g:if>
 			<ol class="property-list student">
 			
+				<g:if test="${studentInstance?.phoneNumber}">
+				<li class="fieldcontain">
+					<span id="phoneNumber-label" class="property-label"><g:message code="student.phoneNumber.label" default="Phone Number" /></span>
+					
+						<span class="property-value" aria-labelledby="phoneNumber-label"><g:fieldValue bean="${studentInstance}" field="phoneNumber"/></span>
+					
+				</li>
+				</g:if>
+			
 				<g:if test="${studentInstance?.email}">
 				<li class="fieldcontain">
 					<span id="email-label" class="property-label"><g:message code="student.email.label" default="Email" /></span>
@@ -55,15 +64,6 @@
 					<span id="lastName-label" class="property-label"><g:message code="student.lastName.label" default="Last Name" /></span>
 					
 						<span class="property-value" aria-labelledby="lastName-label"><g:fieldValue bean="${studentInstance}" field="lastName"/></span>
-					
-				</li>
-				</g:if>
-			
-				<g:if test="${studentInstance?.phoneNumber}">
-				<li class="fieldcontain">
-					<span id="phoneNumber-label" class="property-label"><g:message code="student.phoneNumber.label" default="Phone Number" /></span>
-					
-						<span class="property-value" aria-labelledby="phoneNumber-label"><g:fieldValue bean="${studentInstance}" field="phoneNumber"/></span>
 					
 				</li>
 				</g:if>

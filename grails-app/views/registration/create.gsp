@@ -1,4 +1,6 @@
 <%@ page import="alumno.Registration" %>
+<%@ page import="alumno.Student" %>
+<%@ page import="alumno.Household" %>
 <!doctype html>
 <html>
 	<head>
@@ -28,7 +30,13 @@
 			</g:hasErrors>
 			<g:form action="save" >
 				<fieldset class="form">
-					<g:render template="form"/>
+                    <f:with bean="studentInstance">
+                        <f:field property="firstName"/>
+                        <f:field property="lastName"/>
+                        <f:field property="grade"/>
+                        <f:field property="phoneNumber"/>
+                        <f:field property="email"/>
+                    </f:with>
 				</fieldset>
 				<fieldset class="buttons">
 					<g:submitButton name="create" class="save" value="${message(code: 'default.button.create.label', default: 'Create')}" />
