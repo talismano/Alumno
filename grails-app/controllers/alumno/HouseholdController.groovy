@@ -1,6 +1,10 @@
 package alumno
 
 import org.springframework.dao.DataIntegrityViolationException
+import groovy.json.JsonSlurper
+import grails.plugins.rest.client.RestBuilder
+import org.codehaus.groovy.grails.web.json.JSONObject
+
 
 class HouseholdController {
 
@@ -21,6 +25,15 @@ class HouseholdController {
 
     def save() {
         def householdInstance = new Household(params)
+        String zipcodeLookupString = "http://ws.geonames.org/postalCodeSearchJSON?country=US&postalcode=" + householdInstance.zip
+        // {"postalCodes":[{"adminName2":"Santa Clara","adminCode2":"085","adminCode1":"CA","postalCode":"95032","countryCode":"US","lng":-121.9554,"placeName":"Los Gatos","lat":37.2417,"adminName1":"California"}]}
+        def rest = new RestBuilder(connectTimeout:1000, readTimeout:20000)
+        def resp = rest.get(zipcodeLookupString)
+        resp.json instanceof JSONObject
+
+        householdInstance.city = resp.json.postalCodes[0].placeName
+        householdInstance.state = resp.json.postalCodes[0].adminCode1
+
         if (!householdInstance.save(flush: true)) {
             render(view: "create", model: [householdInstance: householdInstance])
             return
