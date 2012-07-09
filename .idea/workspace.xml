@@ -4,9 +4,6 @@
     <list default="true" id="1054edd9-bab1-479c-8f66-56ceca111c2c" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/grails-app/domain/alumno/Household.groovy" afterPath="$PROJECT_DIR$/grails-app/domain/alumno/Household.groovy" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/grails-app/domain/alumno/Parent.groovy" afterPath="$PROJECT_DIR$/grails-app/domain/alumno/Parent.groovy" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/grails-app/domain/alumno/Registration.groovy" afterPath="$PROJECT_DIR$/grails-app/domain/alumno/Registration.groovy" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/grails-app/domain/alumno/Student.groovy" afterPath="$PROJECT_DIR$/grails-app/domain/alumno/Student.groovy" />
     </list>
     <list id="05aebbce-3221-4e32-a99d-d105b9e2a00f" name="Rejected commit: Default" comment="initial" />
     <list id="34d04cf0-9c8a-4260-b790-4e0e772ea1f2" name="Rejected commit: Default (2)" comment="initial" />
@@ -67,10 +64,10 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="Registration.groovy" pinned="false" current="false" current-in-tab="false">
+      <file leaf-file-name="Registration.groovy" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/grails-app/domain/alumno/Registration.groovy">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="19" column="0" selection-start="210" selection-end="369" vertical-scroll-proportion="-12.391304">
+            <state line="19" column="0" selection-start="210" selection-end="369" vertical-scroll-proportion="0.46875">
               <folding />
             </state>
           </provider>
@@ -79,7 +76,7 @@
       <file leaf-file-name="Household.groovy" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/grails-app/domain/alumno/Household.groovy">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="30" column="54" selection-start="568" selection-end="568" vertical-scroll-proportion="-10.0">
+            <state line="30" column="34" selection-start="548" selection-end="548" vertical-scroll-proportion="-10.0">
               <folding />
             </state>
           </provider>
@@ -97,10 +94,10 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Parent.groovy" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="Parent.groovy" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/grails-app/domain/alumno/Parent.groovy">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="22" column="39" selection-start="432" selection-end="432" vertical-scroll-proportion="0.5631399">
+            <state line="22" column="39" selection-start="432" selection-end="432" vertical-scroll-proportion="-7.3333335">
               <folding />
             </state>
           </provider>
@@ -133,9 +130,9 @@
         <option value="$PROJECT_DIR$/grails-app/controllers/alumno/RegistrationController.groovy" />
         <option value="$PROJECT_DIR$/grails-app/controllers/alumno/HouseholdController.groovy" />
         <option value="$PROJECT_DIR$/grails-app/domain/alumno/Registration.groovy" />
-        <option value="$PROJECT_DIR$/grails-app/domain/alumno/Household.groovy" />
         <option value="$PROJECT_DIR$/grails-app/domain/alumno/Student.groovy" />
         <option value="$PROJECT_DIR$/grails-app/domain/alumno/Parent.groovy" />
+        <option value="$PROJECT_DIR$/grails-app/domain/alumno/Household.groovy" />
       </list>
     </option>
   </component>
@@ -464,7 +461,11 @@
       <created>1341872503818</created>
       <updated>1341872503818</updated>
     </task>
-    <option name="localTasksCounter" value="26" />
+    <task id="LOCAL-00026" summary="toString for all domain objects">
+      <created>1341872954207</created>
+      <updated>1341872954207</updated>
+    </task>
+    <option name="localTasksCounter" value="27" />
     <servers />
   </component>
   <component name="TodoView" selected-index="3">
@@ -557,7 +558,7 @@
     <option name="SHOW_VCS_ERROR_NOTIFICATIONS" value="true" />
     <option name="FORCE_NON_EMPTY_COMMENT" value="false" />
     <option name="CLEAR_INITIAL_COMMIT_MESSAGE" value="false" />
-    <option name="LAST_COMMIT_MESSAGE" value="toString for registration and initial" />
+    <option name="LAST_COMMIT_MESSAGE" value="toString for all domain objects" />
     <option name="MAKE_NEW_CHANGELIST_ACTIVE" value="true" />
     <option name="OPTIMIZE_IMPORTS_BEFORE_PROJECT_COMMIT" value="false" />
     <option name="CHECK_FILES_UP_TO_DATE_BEFORE_COMMIT" value="false" />
@@ -584,6 +585,7 @@
     <MESSAGE value="added security plugin" />
     <MESSAGE value="automatic fill out of city and state from zip code lookup" />
     <MESSAGE value="toString for registration and initial" />
+    <MESSAGE value="toString for all domain objects" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager />
@@ -675,19 +677,9 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/grails-app/domain/alumno/Registration.groovy">
+    <entry file="file://$PROJECT_DIR$/grails-app/domain/alumno/Parent.groovy">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="19" column="0" selection-start="210" selection-end="369" vertical-scroll-proportion="-12.391304">
-          <folding />
-        </state>
-      </provider>
-      <provider editor-type-id="org.jetbrains.plugins.grails.perspectives.DomainClassesRelationsEditorProvider">
-        <state />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/grails-app/domain/alumno/Household.groovy">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="30" column="54" selection-start="568" selection-end="568" vertical-scroll-proportion="-10.0">
+        <state line="22" column="39" selection-start="432" selection-end="432" vertical-scroll-proportion="-7.3333335">
           <folding />
         </state>
       </provider>
@@ -705,9 +697,19 @@
         <state />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/grails-app/domain/alumno/Parent.groovy">
+    <entry file="file://$PROJECT_DIR$/grails-app/domain/alumno/Household.groovy">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="22" column="39" selection-start="432" selection-end="432" vertical-scroll-proportion="0.5631399">
+        <state line="30" column="34" selection-start="548" selection-end="548" vertical-scroll-proportion="-10.0">
+          <folding />
+        </state>
+      </provider>
+      <provider editor-type-id="org.jetbrains.plugins.grails.perspectives.DomainClassesRelationsEditorProvider">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/grails-app/domain/alumno/Registration.groovy">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="19" column="0" selection-start="210" selection-end="369" vertical-scroll-proportion="0.46875">
           <folding />
         </state>
       </provider>

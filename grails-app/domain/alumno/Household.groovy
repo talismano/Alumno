@@ -28,7 +28,7 @@ class Household {
 
     @Override
     public String toString ( ) {
-        "$id - ${address},${city} Safehome:${safehome}"
+        "$id - ${address}, ${city}"
     }
 
 }
