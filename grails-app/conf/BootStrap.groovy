@@ -1,6 +1,7 @@
 
 import alumno.User
 import alumno.UserRole
+import alumno.Role
 
 class BootStrap {
     def springSecurityService
@@ -13,8 +14,10 @@ class BootStrap {
                 password: 'lghsdirectory',
                 enabled: true).save(failOnError: true)
 
-        if (!adminUser.authorities.contains(adminRole)) {
-            UserRole.create adminUser, ROLE_ADMIN
+        def adminRole = Role.findByAuthority("ROLE_ADMIN") ?: new Role(authority: "ROLE_ADMIN").save()
+
+        if (!adminUser.authorities.contains(ROLE_ADMIN)) {
+            UserRole.create adminUser, adminRole
         }
 
     }
