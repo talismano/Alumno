@@ -17,4 +17,10 @@ class Student {
     static belongsTo = [
             registration: Registration
     ]
+
+    @Override
+    public String toString ( ) {
+        "$id - ${firstName} ${lastName}, ${grade}th grade"
+    }
+
 }

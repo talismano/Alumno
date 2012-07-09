@@ -26,4 +26,9 @@ class Household {
             parents: Parent
     ]
 
+    @Override
+    public String toString ( ) {
+        "$id - ${address},${city} Safehome:${safehome}"
+    }
+
 }

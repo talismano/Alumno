@@ -18,5 +18,4 @@ class Registration {
         "$id - Created on ${dateCreated?.format('MM-dd, HH:mm:ss')?:'Unknown'} - IP Address:${ipAddress}"
     }
 
-
 }

@@ -2,301 +2,11 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="1054edd9-bab1-479c-8f66-56ceca111c2c" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/.name" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.settings/org.codehaus.groovy.eclipse.preferences.prefs" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/out/production/alumno-grailsPlugins/JQueryResourceTagLib$_closure1.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/out/production/alumno-grailsPlugins/JQueryResourceTagLib$_closure2.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/out/production/alumno-grailsPlugins/JQueryResourceTagLib$_closure2_closure4.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/out/production/alumno-grailsPlugins/JQueryResourceTagLib$_closure2_closure5.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/out/production/alumno-grailsPlugins/JQueryResourceTagLib$_closure2_closure6.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/out/production/alumno-grailsPlugins/JQueryResourceTagLib$_closure2_closure7.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/out/production/alumno-grailsPlugins/JQueryResourceTagLib$_closure3.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/out/production/alumno-grailsPlugins/JQueryResourceTagLib.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/out/production/alumno-grailsPlugins/JQueryService$_closure1.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/out/production/alumno-grailsPlugins/JQueryService$_closure2.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/out/production/alumno-grailsPlugins/JQueryService$_closure3.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/out/production/alumno-grailsPlugins/JQueryService$_closure4.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/out/production/alumno-grailsPlugins/JQueryService.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/out/production/alumno-grailsPlugins/JQueryTagLib$_closure1.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/out/production/alumno-grailsPlugins/JQueryTagLib$_closure1_closure6.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/out/production/alumno-grailsPlugins/JQueryTagLib$_closure2.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/out/production/alumno-grailsPlugins/JQueryTagLib$_closure3.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/out/production/alumno-grailsPlugins/JQueryTagLib$_closure4.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/out/production/alumno-grailsPlugins/JQueryTagLib$_closure5.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/out/production/alumno-grailsPlugins/JQueryTagLib.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/out/production/alumno-grailsPlugins/grails/plugin/webxml/FilterManager.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/out/production/alumno-grailsPlugins/org/codehaus/groovy/grails/plugins/jquery/JQueryConfig$_init_closure1.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/out/production/alumno-grailsPlugins/org/codehaus/groovy/grails/plugins/jquery/JQueryConfig$_init_closure2.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/out/production/alumno-grailsPlugins/org/codehaus/groovy/grails/plugins/jquery/JQueryConfig.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/out/production/alumno-grailsPlugins/org/codehaus/groovy/grails/plugins/jquery/JQueryProvider$_doRemoteFunction_closure1.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/out/production/alumno-grailsPlugins/org/codehaus/groovy/grails/plugins/jquery/JQueryProvider$_doRemoteFunction_closure2.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/out/production/alumno-grailsPlugins/org/codehaus/groovy/grails/plugins/jquery/JQueryProvider$_doRemoteFunction_closure3.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/out/production/alumno-grailsPlugins/org/codehaus/groovy/grails/plugins/jquery/JQueryProvider$_doRemoteFunction_closure4.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/out/production/alumno-grailsPlugins/org/codehaus/groovy/grails/plugins/jquery/JQueryProvider.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/out/production/alumno-grailsPlugins/org/grails/plugin/resource/AggregatedResourceMeta$_buildAggregateResource_closure3.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/out/production/alumno-grailsPlugins/org/grails/plugin/resource/AggregatedResourceMeta$_buildAggregateResource_closure3_closure4.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/out/production/alumno-grailsPlugins/org/grails/plugin/resource/AggregatedResourceMeta$_containsResource_closure1.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/out/production/alumno-grailsPlugins/org/grails/plugin/resource/AggregatedResourceMeta$_isDirty_closure2.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/out/production/alumno-grailsPlugins/org/grails/plugin/resource/AggregatedResourceMeta.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/out/production/alumno-grailsPlugins/org/grails/plugin/resource/CSSBundleResourceMeta.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/out/production/alumno-grailsPlugins/org/grails/plugin/resource/CSSLinkProcessor$_process_closure1.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/out/production/alumno-grailsPlugins/org/grails/plugin/resource/CSSLinkProcessor.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/out/production/alumno-grailsPlugins/org/grails/plugin/resource/DevModeSanityFilter.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/out/production/alumno-grailsPlugins/org/grails/plugin/resource/JavaScriptBundleResourceMeta.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/out/production/alumno-grailsPlugins/org/grails/plugin/resource/ProcessingFilter.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/out/production/alumno-grailsPlugins/org/grails/plugin/resource/ResourceMeta$_reset_closure1.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/out/production/alumno-grailsPlugins/org/grails/plugin/resource/ResourceMeta.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/out/production/alumno-grailsPlugins/org/grails/plugin/resource/ResourceModule$_closure1.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/out/production/alumno-grailsPlugins/org/grails/plugin/resource/ResourceModule$_getRequiredDispositions_closure3.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/out/production/alumno-grailsPlugins/org/grails/plugin/resource/ResourceModule$_newResourceFromArgs_closure2.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/out/production/alumno-grailsPlugins/org/grails/plugin/resource/ResourceModule.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/out/production/alumno-grailsPlugins/org/grails/plugin/resource/ResourceProcessor$_afterPropertiesSet_closure5.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/out/production/alumno-grailsPlugins/org/grails/plugin/resource/ResourceProcessor$_afterPropertiesSet_closure6.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/out/production/alumno-grailsPlugins/org/grails/plugin/resource/ResourceProcessor$_canProcessLegacyResource_closure7.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/out/production/alumno-grailsPlugins/org/grails/plugin/resource/ResourceProcessor$_canProcessLegacyResource_closure8.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/out/production/alumno-grailsPlugins/org/grails/plugin/resource/ResourceProcessor$_defineModuleFromBuilder_closure16.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/out/production/alumno-grailsPlugins/org/grails/plugin/resource/ResourceProcessor$_dumpResources_closure21.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/out/production/alumno-grailsPlugins/org/grails/plugin/resource/ResourceProcessor$_dumpResources_closure21_closure35.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/out/production/alumno-grailsPlugins/org/grails/plugin/resource/ResourceProcessor$_dumpResources_closure21_closure36.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/out/production/alumno-grailsPlugins/org/grails/plugin/resource/ResourceProcessor$_dumpResources_closure22.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/out/production/alumno-grailsPlugins/org/grails/plugin/resource/ResourceProcessor$_dumpStats_closure20.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/out/production/alumno-grailsPlugins/org/grails/plugin/resource/ResourceProcessor$_dumpStats_closure20_closure34.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/out/production/alumno-grailsPlugins/org/grails/plugin/resource/ResourceProcessor$_findSyntheticResourceById_closure9.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/out/production/alumno-grailsPlugins/org/grails/plugin/resource/ResourceProcessor$_getConfigParamOrDefault_closure23.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/out/production/alumno-grailsPlugins/org/grails/plugin/resource/ResourceProcessor$_getResourceMetaForURI_closure10.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/out/production/alumno-grailsPlugins/org/grails/plugin/resource/ResourceProcessor$_getResourceMetaForURI_closure10_closure27.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/out/production/alumno-grailsPlugins/org/grails/plugin/resource/ResourceProcessor$_getServletContext_closure24.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/out/production/alumno-grailsPlugins/org/grails/plugin/resource/ResourceProcessor$_loadModules_closure17.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/out/production/alumno-grailsPlugins/org/grails/plugin/resource/ResourceProcessor$_loadModules_closure18.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/out/production/alumno-grailsPlugins/org/grails/plugin/resource/ResourceProcessor$_loadModules_closure18_closure30.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/out/production/alumno-grailsPlugins/org/grails/plugin/resource/ResourceProcessor$_loadModules_closure18_closure31.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/out/production/alumno-grailsPlugins/org/grails/plugin/resource/ResourceProcessor$_loadModules_closure18_closure31_closure32.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/out/production/alumno-grailsPlugins/org/grails/plugin/resource/ResourceProcessor$_loadModules_closure18_closure31_closure33.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/out/production/alumno-grailsPlugins/org/grails/plugin/resource/ResourceProcessor$_loadModules_closure19.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/out/production/alumno-grailsPlugins/org/grails/plugin/resource/ResourceProcessor$_makeFileSystemPathFromURI_closure11.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/out/production/alumno-grailsPlugins/org/grails/plugin/resource/ResourceProcessor$_prepareResourceBatch_closure13.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/out/production/alumno-grailsPlugins/org/grails/plugin/resource/ResourceProcessor$_prepareResourceBatch_closure14.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/out/production/alumno-grailsPlugins/org/grails/plugin/resource/ResourceProcessor$_prepareResourceBatch_closure14_closure28.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/out/production/alumno-grailsPlugins/org/grails/plugin/resource/ResourceProcessor$_prepareResourceBatch_closure14_closure29.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/out/production/alumno-grailsPlugins/org/grails/plugin/resource/ResourceProcessor$_prepareResourceBatch_closure15.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/out/production/alumno-grailsPlugins/org/grails/plugin/resource/ResourceProcessor$_prepareSingleDeclaredResource_closure12.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/out/production/alumno-grailsPlugins/org/grails/plugin/resource/ResourceProcessor$_updateDependencyOrder_closure1.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/out/production/alumno-grailsPlugins/org/grails/plugin/resource/ResourceProcessor$_updateDependencyOrder_closure2.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/out/production/alumno-grailsPlugins/org/grails/plugin/resource/ResourceProcessor$_updateDependencyOrder_closure3.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/out/production/alumno-grailsPlugins/org/grails/plugin/resource/ResourceProcessor$_updateDependencyOrder_closure3_closure25.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/out/production/alumno-grailsPlugins/org/grails/plugin/resource/ResourceProcessor$_updateDependencyOrder_closure4.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/out/production/alumno-grailsPlugins/org/grails/plugin/resource/ResourceProcessor$_updateDependencyOrder_closure4_closure26.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/out/production/alumno-grailsPlugins/org/grails/plugin/resource/ResourceProcessor.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/out/production/alumno-grailsPlugins/org/grails/plugin/resource/ResourceProcessorBatch.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/out/production/alumno-grailsPlugins/org/grails/plugin/resource/ResourceTagLib$__clinit__closure13.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/out/production/alumno-grailsPlugins/org/grails/plugin/resource/ResourceTagLib$__clinit__closure14.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/out/production/alumno-grailsPlugins/org/grails/plugin/resource/ResourceTagLib$_closure1.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/out/production/alumno-grailsPlugins/org/grails/plugin/resource/ResourceTagLib$_closure10.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/out/production/alumno-grailsPlugins/org/grails/plugin/resource/ResourceTagLib$_closure10_closure17.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/out/production/alumno-grailsPlugins/org/grails/plugin/resource/ResourceTagLib$_closure1_closure15.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/out/production/alumno-grailsPlugins/org/grails/plugin/resource/ResourceTagLib$_closure2.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/out/production/alumno-grailsPlugins/org/grails/plugin/resource/ResourceTagLib$_closure3.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/out/production/alumno-grailsPlugins/org/grails/plugin/resource/ResourceTagLib$_closure4.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/out/production/alumno-grailsPlugins/org/grails/plugin/resource/ResourceTagLib$_closure5.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/out/production/alumno-grailsPlugins/org/grails/plugin/resource/ResourceTagLib$_closure5_closure16.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/out/production/alumno-grailsPlugins/org/grails/plugin/resource/ResourceTagLib$_closure6.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/out/production/alumno-grailsPlugins/org/grails/plugin/resource/ResourceTagLib$_closure7.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/out/production/alumno-grailsPlugins/org/grails/plugin/resource/ResourceTagLib$_closure8.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/out/production/alumno-grailsPlugins/org/grails/plugin/resource/ResourceTagLib$_closure9.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/out/production/alumno-grailsPlugins/org/grails/plugin/resource/ResourceTagLib$_resolveResourceAndURI_closure12.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/out/production/alumno-grailsPlugins/org/grails/plugin/resource/ResourceTagLib$_writeAttrs_closure11.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/out/production/alumno-grailsPlugins/org/grails/plugin/resource/ResourceTagLib.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/out/production/alumno-grailsPlugins/org/grails/plugin/resource/URLUtils.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/out/production/alumno-grailsPlugins/org/grails/plugin/resource/mapper/MapperPhase.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/out/production/alumno-grailsPlugins/org/grails/plugin/resource/mapper/ResourceMapper$_closure1.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/out/production/alumno-grailsPlugins/org/grails/plugin/resource/mapper/ResourceMapper$_getDefaultExcludes_closure8.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/out/production/alumno-grailsPlugins/org/grails/plugin/resource/mapper/ResourceMapper$_getDefaultIncludes_closure9.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/out/production/alumno-grailsPlugins/org/grails/plugin/resource/mapper/ResourceMapper$_getExcludes_closure10.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/out/production/alumno-grailsPlugins/org/grails/plugin/resource/mapper/ResourceMapper$_getExcludingPattern_closure2.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/out/production/alumno-grailsPlugins/org/grails/plugin/resource/mapper/ResourceMapper$_getIncludes_closure11.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/out/production/alumno-grailsPlugins/org/grails/plugin/resource/mapper/ResourceMapper$_getIncludingPattern_closure3.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/out/production/alumno-grailsPlugins/org/grails/plugin/resource/mapper/ResourceMapper$_getName_closure7.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/out/production/alumno-grailsPlugins/org/grails/plugin/resource/mapper/ResourceMapper$_getOperation_closure5.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/out/production/alumno-grailsPlugins/org/grails/plugin/resource/mapper/ResourceMapper$_getPhase_closure4.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/out/production/alumno-grailsPlugins/org/grails/plugin/resource/mapper/ResourceMapper$_getPriority_closure6.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/out/production/alumno-grailsPlugins/org/grails/plugin/resource/mapper/ResourceMapper.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/out/production/alumno-grailsPlugins/org/grails/plugin/resource/mapper/ResourceMappersFactory$_createResourceMappers_closure1.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/out/production/alumno-grailsPlugins/org/grails/plugin/resource/mapper/ResourceMappersFactory$_createResourceMappers_closure2.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/out/production/alumno-grailsPlugins/org/grails/plugin/resource/mapper/ResourceMappersFactory$_createResourceMappers_closure2_closure7.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/out/production/alumno-grailsPlugins/org/grails/plugin/resource/mapper/ResourceMappersFactory$_createResourceMappers_closure3.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/out/production/alumno-grailsPlugins/org/grails/plugin/resource/mapper/ResourceMappersFactory$_createResourceMappers_closure4.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/out/production/alumno-grailsPlugins/org/grails/plugin/resource/mapper/ResourceMappersFactory$_createResourceMappers_closure5.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/out/production/alumno-grailsPlugins/org/grails/plugin/resource/mapper/ResourceMappersFactory$_createResourceMappers_closure6.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/out/production/alumno-grailsPlugins/org/grails/plugin/resource/mapper/ResourceMappersFactory.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/out/production/alumno-grailsPlugins/org/grails/plugin/resource/module/ModuleBuilder.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/out/production/alumno-grailsPlugins/org/grails/plugin/resource/module/ModuleDeclarationsFactory$_getModuleDeclarations_closure1.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/out/production/alumno-grailsPlugins/org/grails/plugin/resource/module/ModuleDeclarationsFactory$_getModuleDeclarations_closure2.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/out/production/alumno-grailsPlugins/org/grails/plugin/resource/module/ModuleDeclarationsFactory$_getModuleDeclarations_closure3.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/out/production/alumno-grailsPlugins/org/grails/plugin/resource/module/ModuleDeclarationsFactory.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/out/production/alumno-grailsPlugins/org/grails/plugin/resource/module/ModulesBuilder$_invokeMethod_closure1.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/out/production/alumno-grailsPlugins/org/grails/plugin/resource/module/ModulesBuilder.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/out/production/alumno-grailsPlugins/org/grails/plugin/resource/util/HalfBakedLegacyLinkGenerator.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/out/production/alumno-grailsPlugins/org/grails/plugin/resource/util/ResourceMetaStore$_addResource_closure1.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/out/production/alumno-grailsPlugins/org/grails/plugin/resource/util/ResourceMetaStore.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/out/production/alumno-grailsPlugins/org/grails/plugin/resources/artefacts/AbstractResourcesArtefactHandler.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/out/production/alumno-grailsPlugins/org/grails/plugin/resources/artefacts/DefaultResourceMapperClass.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/out/production/alumno-grailsPlugins/org/grails/plugin/resources/artefacts/DefaultResourcesClass.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/out/production/alumno-grailsPlugins/org/grails/plugin/resources/artefacts/ResourceMapperArtefactHandler.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/out/production/alumno-grailsPlugins/org/grails/plugin/resources/artefacts/ResourceMapperClass.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/out/production/alumno-grailsPlugins/org/grails/plugin/resources/artefacts/ResourcesArtefactHandler.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/out/production/alumno-grailsPlugins/org/grails/plugin/resources/artefacts/ResourcesClass.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/out/production/alumno/alumno/Household$__clinit__closure1.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/out/production/alumno/alumno/Household.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/out/production/alumno/alumno/Parent$__clinit__closure1.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/out/production/alumno/alumno/Parent.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/out/production/alumno/alumno/Registration$__clinit__closure1.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/out/production/alumno/alumno/Registration.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/out/production/alumno/alumno/Student$__clinit__closure1.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/out/production/alumno/alumno/Student.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/out/test/alumno/alumno/HouseholdTests.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/out/test/alumno/alumno/ParentTests.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/out/test/alumno/alumno/RegistrationTests.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/out/test/alumno/alumno/StudentTests.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/classes/ApplicationResources$_run_closure1.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/classes/ApplicationResources$_run_closure1_closure2.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/classes/ApplicationResources.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/classes/BootStrap$_closure1.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/classes/BootStrap$_closure2.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/classes/BootStrap.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/classes/BuildConfig$_run_closure1.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/classes/BuildConfig$_run_closure1_closure2.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/classes/BuildConfig$_run_closure1_closure3.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/classes/BuildConfig$_run_closure1_closure4.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/classes/BuildConfig$_run_closure1_closure5.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/classes/BuildConfig.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/classes/Config$_run_closure1.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/classes/Config$_run_closure1_closure3.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/classes/Config$_run_closure1_closure4.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/classes/Config$_run_closure2.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/classes/Config.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/classes/DataSource$_run_closure1.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/classes/DataSource$_run_closure2.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/classes/DataSource$_run_closure3.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/classes/DataSource$_run_closure3_closure4.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/classes/DataSource$_run_closure3_closure4_closure7.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/classes/DataSource$_run_closure3_closure5.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/classes/DataSource$_run_closure3_closure5_closure8.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/classes/DataSource$_run_closure3_closure6.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/classes/DataSource$_run_closure3_closure6_closure9.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/classes/DataSource$_run_closure3_closure6_closure9_closure10.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/classes/DataSource.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/classes/UrlMappings$__clinit__closure1.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/classes/UrlMappings$__clinit__closure1_closure2.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/classes/UrlMappings$__clinit__closure1_closure2_closure3.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/classes/UrlMappings.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/classes/alumno/Household$__clinit__closure1.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/classes/alumno/Household.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/classes/alumno/HouseholdController.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/classes/alumno/Parent$__clinit__closure1.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/classes/alumno/Parent.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/classes/alumno/ParentController.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/classes/alumno/Registration$__clinit__closure1.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/classes/alumno/Registration.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/classes/alumno/RegistrationController.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/classes/alumno/Student$__clinit__closure1.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/classes/alumno/Student.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/classes/alumno/StudentController.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/classes/resources$_run_closure1.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/classes/resources.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web-app/images/apple-touch-icon-retina.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web-app/images/apple-touch-icon.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web-app/images/favicon.ico" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web-app/images/grails_logo.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web-app/images/grails_logo.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web-app/images/leftnav_btm.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web-app/images/leftnav_midstretch.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web-app/images/leftnav_top.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web-app/images/skin/database_add.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web-app/images/skin/database_delete.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web-app/images/skin/database_edit.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web-app/images/skin/database_save.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web-app/images/skin/database_table.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web-app/images/skin/exclamation.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web-app/images/skin/house.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web-app/images/skin/information.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web-app/images/skin/shadow.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web-app/images/skin/sorted_asc.gif" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web-app/images/skin/sorted_desc.gif" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web-app/images/spinner.gif" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web-app/images/springsource.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.classpath" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/ant.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/compiler.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/copyright/profiles_settings.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/encodings.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/misc.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/modules.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/scopes/scope_settings.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/vcs.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.project" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/alumno-grailsPlugins.iml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/alumno.iml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/out/production/alumno-grailsPlugins/messages.properties" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/out/production/alumno/messages.properties" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/out/production/alumno/messages_cs_CZ.properties" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/out/production/alumno/messages_da.properties" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/out/production/alumno/messages_de.properties" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/out/production/alumno/messages_es.properties" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/out/production/alumno/messages_fr.properties" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/out/production/alumno/messages_it.properties" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/out/production/alumno/messages_ja.properties" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/out/production/alumno/messages_nl.properties" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/out/production/alumno/messages_pt_BR.properties" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/out/production/alumno/messages_pt_PT.properties" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/out/production/alumno/messages_ru.properties" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/out/production/alumno/messages_sv.properties" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/out/production/alumno/messages_th.properties" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/out/production/alumno/messages_zh_CN.properties" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/templates/scaffolding/create.gsp" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/templates/scaffolding/edit.gsp" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/classes/application.properties" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/stacktrace.log" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/test/unit/alumno/HouseholdControllerTests.groovy" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/test/unit/alumno/HouseholdTests.groovy" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/test/unit/alumno/ParentControllerTests.groovy" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/test/unit/alumno/ParentTests.groovy" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/test/unit/alumno/RegistrationControllerTests.groovy" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/test/unit/alumno/RegistrationTests.groovy" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/test/unit/alumno/StudentControllerTests.groovy" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/test/unit/alumno/StudentTests.groovy" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web-app/WEB-INF/applicationContext.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web-app/WEB-INF/sitemesh.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web-app/WEB-INF/tld/c.tld" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web-app/WEB-INF/tld/fmt.tld" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web-app/WEB-INF/tld/grails.tld" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web-app/WEB-INF/tld/spring.tld" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web-app/css/errors.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web-app/css/main.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web-app/css/mobile.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web-app/js/application.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/grails-app/domain/alumno/Household.groovy" afterPath="$PROJECT_DIR$/grails-app/domain/alumno/Household.groovy" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/grails-app/domain/alumno/Parent.groovy" afterPath="$PROJECT_DIR$/grails-app/domain/alumno/Parent.groovy" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/grails-app/domain/alumno/Registration.groovy" afterPath="$PROJECT_DIR$/grails-app/domain/alumno/Registration.groovy" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/grails-app/domain/alumno/Student.groovy" afterPath="$PROJECT_DIR$/grails-app/domain/alumno/Student.groovy" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/grails-app/views/household/_form.gsp" afterPath="$PROJECT_DIR$/grails-app/views/household/_form.gsp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/grails-app/views/household/create.gsp" afterPath="$PROJECT_DIR$/grails-app/views/household/create.gsp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/grails-app/views/household/edit.gsp" afterPath="$PROJECT_DIR$/grails-app/views/household/edit.gsp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/grails-app/views/household/list.gsp" afterPath="$PROJECT_DIR$/grails-app/views/household/list.gsp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/grails-app/views/household/show.gsp" afterPath="$PROJECT_DIR$/grails-app/views/household/show.gsp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/grails-app/views/parent/_form.gsp" afterPath="$PROJECT_DIR$/grails-app/views/parent/_form.gsp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/grails-app/views/parent/create.gsp" afterPath="$PROJECT_DIR$/grails-app/views/parent/create.gsp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/grails-app/views/parent/edit.gsp" afterPath="$PROJECT_DIR$/grails-app/views/parent/edit.gsp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/grails-app/views/parent/list.gsp" afterPath="$PROJECT_DIR$/grails-app/views/parent/list.gsp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/grails-app/views/parent/show.gsp" afterPath="$PROJECT_DIR$/grails-app/views/parent/show.gsp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/grails-app/views/registration/_form.gsp" afterPath="$PROJECT_DIR$/grails-app/views/registration/_form.gsp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/grails-app/views/registration/create.gsp" afterPath="$PROJECT_DIR$/grails-app/views/registration/create.gsp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/grails-app/views/registration/edit.gsp" afterPath="$PROJECT_DIR$/grails-app/views/registration/edit.gsp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/grails-app/views/student/_form.gsp" afterPath="$PROJECT_DIR$/grails-app/views/student/_form.gsp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/grails-app/views/student/create.gsp" afterPath="$PROJECT_DIR$/grails-app/views/student/create.gsp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/grails-app/views/student/edit.gsp" afterPath="$PROJECT_DIR$/grails-app/views/student/edit.gsp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/grails-app/views/student/list.gsp" afterPath="$PROJECT_DIR$/grails-app/views/student/list.gsp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/grails-app/views/student/show.gsp" afterPath="$PROJECT_DIR$/grails-app/views/student/show.gsp" />
     </list>
     <list id="05aebbce-3221-4e32-a99d-d105b9e2a00f" name="Rejected commit: Default" comment="initial" />
     <list id="34d04cf0-9c8a-4260-b790-4e0e772ea1f2" name="Rejected commit: Default (2)" comment="initial" />
@@ -360,36 +70,7 @@
       <file leaf-file-name="Registration.groovy" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/grails-app/domain/alumno/Registration.groovy">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="20" column="67" selection-start="370" selection-end="370" vertical-scroll-proportion="-13.043478">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="HouseholdController.groovy" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/grails-app/controllers/alumno/HouseholdController.groovy">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="32" column="0" selection-start="1243" selection-end="1243" vertical-scroll-proportion="-20.869566">
-              <folding>
-                <element signature="e#16#78#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="application.properties" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/application.properties">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="9" column="20" selection-start="223" selection-end="223" vertical-scroll-proportion="0.0">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Patient.groovy" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/../4/healthdock/grails-app/domain/com/cds/healthdock/persons/Patient.groovy">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="52" column="115" selection-start="951" selection-end="1115" vertical-scroll-proportion="0.0">
+            <state line="19" column="0" selection-start="210" selection-end="369" vertical-scroll-proportion="-12.391304">
               <folding />
             </state>
           </provider>
@@ -398,7 +79,7 @@
       <file leaf-file-name="Household.groovy" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/grails-app/domain/alumno/Household.groovy">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="27" column="0" selection-start="466" selection-end="466" vertical-scroll-proportion="-9.0">
+            <state line="30" column="54" selection-start="568" selection-end="568" vertical-scroll-proportion="-10.0">
               <folding />
             </state>
           </provider>
@@ -407,39 +88,24 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="RemoteFacilityService.groovy" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/../4/healthdock/grails-app/services/com/cds/healthdock/facilities/RemoteFacilityService.groovy">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file leaf-file-name="Student.groovy" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/grails-app/domain/alumno/Student.groovy">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="6" column="140" selection-start="125" selection-end="125" vertical-scroll-proportion="-3.9130435">
+            <state line="19" column="0" selection-start="332" selection-end="444" vertical-scroll-proportion="-12.391304">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="create.gsp" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/grails-app/views/registration/create.gsp">
+      <file leaf-file-name="Parent.groovy" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/grails-app/domain/alumno/Parent.groovy">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="38" column="29" selection-start="1812" selection-end="1812" vertical-scroll-proportion="-10.382978">
+            <state line="22" column="39" selection-start="432" selection-end="432" vertical-scroll-proportion="0.5631399">
               <folding />
             </state>
           </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="create.gsp" pinned="false" current="true" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/grails-app/views/household/create.gsp">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
-              <folding />
-            </state>
+          <provider editor-type-id="org.jetbrains.plugins.grails.perspectives.DomainClassesRelationsEditorProvider">
+            <state />
           </provider>
         </entry>
       </file>
@@ -458,7 +124,6 @@
       <list>
         <option value="$PROJECT_DIR$/grails-app/conf/BuildConfig.groovy" />
         <option value="$PROJECT_DIR$/grails-app/controllers/alumno/StudentController.groovy" />
-        <option value="$PROJECT_DIR$/grails-app/domain/alumno/Parent.groovy" />
         <option value="$PROJECT_DIR$/grails-app/conf/Config.groovy" />
         <option value="$PROJECT_DIR$/src/templates/scaffolding/create.gsp" />
         <option value="$PROJECT_DIR$/grails-app/views/registration/_form.gsp" />
@@ -467,9 +132,10 @@
         <option value="$PROJECT_DIR$/grails-app/conf/BootStrap.groovy" />
         <option value="$PROJECT_DIR$/grails-app/controllers/alumno/RegistrationController.groovy" />
         <option value="$PROJECT_DIR$/grails-app/controllers/alumno/HouseholdController.groovy" />
-        <option value="$PROJECT_DIR$/grails-app/domain/alumno/Student.groovy" />
-        <option value="$PROJECT_DIR$/grails-app/domain/alumno/Household.groovy" />
         <option value="$PROJECT_DIR$/grails-app/domain/alumno/Registration.groovy" />
+        <option value="$PROJECT_DIR$/grails-app/domain/alumno/Household.groovy" />
+        <option value="$PROJECT_DIR$/grails-app/domain/alumno/Student.groovy" />
+        <option value="$PROJECT_DIR$/grails-app/domain/alumno/Parent.groovy" />
       </list>
     </option>
   </component>
@@ -794,7 +460,11 @@
       <created>1341858642335</created>
       <updated>1341858642335</updated>
     </task>
-    <option name="localTasksCounter" value="25" />
+    <task id="LOCAL-00025" summary="toString for registration and initial">
+      <created>1341872503818</created>
+      <updated>1341872503818</updated>
+    </task>
+    <option name="localTasksCounter" value="26" />
     <servers />
   </component>
   <component name="TodoView" selected-index="3">
@@ -819,10 +489,10 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="0" width="1920" height="1080" extended-state="0" />
-    <editor active="false" />
+    <editor active="true" />
     <layout>
       <window_info id="Data Sources" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Changes" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.32925585" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.32925585" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="JetGradle" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Persistence" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
@@ -855,8 +525,8 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="OFFER_MOVE_TO_ANOTHER_CHANGELIST_ON_PARTIAL_COMMIT" value="true" />
-    <option name="CHECK_CODE_SMELLS_BEFORE_PROJECT_COMMIT" value="true" />
-    <option name="CHECK_NEW_TODO" value="true" />
+    <option name="CHECK_CODE_SMELLS_BEFORE_PROJECT_COMMIT" value="false" />
+    <option name="CHECK_NEW_TODO" value="false" />
     <option name="myTodoPanelSettings">
       <value>
         <are-packages-shown value="false" />
@@ -887,7 +557,7 @@
     <option name="SHOW_VCS_ERROR_NOTIFICATIONS" value="true" />
     <option name="FORCE_NON_EMPTY_COMMENT" value="false" />
     <option name="CLEAR_INITIAL_COMMIT_MESSAGE" value="false" />
-    <option name="LAST_COMMIT_MESSAGE" value="automatic fill out of city and state from zip code lookup" />
+    <option name="LAST_COMMIT_MESSAGE" value="toString for registration and initial" />
     <option name="MAKE_NEW_CHANGELIST_ACTIVE" value="true" />
     <option name="OPTIMIZE_IMPORTS_BEFORE_PROJECT_COMMIT" value="false" />
     <option name="CHECK_FILES_UP_TO_DATE_BEFORE_COMMIT" value="false" />
@@ -913,6 +583,7 @@
     <MESSAGE value="changed default index to create from list" />
     <MESSAGE value="added security plugin" />
     <MESSAGE value="automatic fill out of city and state from zip code lookup" />
+    <MESSAGE value="toString for registration and initial" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager />
@@ -937,16 +608,6 @@
         <state line="25" column="24" selection-start="710" selection-end="710" vertical-scroll-proportion="0.0">
           <folding />
         </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/grails-app/domain/alumno/Parent.groovy">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="5" column="0" selection-start="59" selection-end="191" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-      <provider editor-type-id="org.jetbrains.plugins.grails.perspectives.DomainClassesRelationsEditorProvider">
-        <state />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/../4/healthdock/grails-app/services/healthdock/PIXManagerService.groovy">
@@ -979,16 +640,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/grails-app/domain/alumno/Student.groovy">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="6" column="140" selection-start="125" selection-end="125" vertical-scroll-proportion="-3.9130435">
-          <folding />
-        </state>
-      </provider>
-      <provider editor-type-id="org.jetbrains.plugins.grails.perspectives.DomainClassesRelationsEditorProvider">
-        <state />
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/grails-app/views/registration/show.gsp">
       <provider selected="true" editor-type-id="text-editor">
         <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="-0.8181818">
@@ -1010,26 +661,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/grails-app/domain/alumno/Household.groovy">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="27" column="0" selection-start="466" selection-end="466" vertical-scroll-proportion="-9.0">
-          <folding />
-        </state>
-      </provider>
-      <provider editor-type-id="org.jetbrains.plugins.grails.perspectives.DomainClassesRelationsEditorProvider">
-        <state />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/grails-app/domain/alumno/Registration.groovy">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="20" column="67" selection-start="370" selection-end="370" vertical-scroll-proportion="-13.043478">
-          <folding />
-        </state>
-      </provider>
-      <provider editor-type-id="org.jetbrains.plugins.grails.perspectives.DomainClassesRelationsEditorProvider">
-        <state />
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/grails-app/views/household/_form.gsp">
       <provider selected="true" editor-type-id="text-editor">
         <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="-1.0124334">
@@ -1042,6 +673,46 @@
         <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
           <folding />
         </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/grails-app/domain/alumno/Registration.groovy">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="19" column="0" selection-start="210" selection-end="369" vertical-scroll-proportion="-12.391304">
+          <folding />
+        </state>
+      </provider>
+      <provider editor-type-id="org.jetbrains.plugins.grails.perspectives.DomainClassesRelationsEditorProvider">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/grails-app/domain/alumno/Household.groovy">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="30" column="54" selection-start="568" selection-end="568" vertical-scroll-proportion="-10.0">
+          <folding />
+        </state>
+      </provider>
+      <provider editor-type-id="org.jetbrains.plugins.grails.perspectives.DomainClassesRelationsEditorProvider">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/grails-app/domain/alumno/Student.groovy">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="19" column="0" selection-start="332" selection-end="444" vertical-scroll-proportion="-12.391304">
+          <folding />
+        </state>
+      </provider>
+      <provider editor-type-id="org.jetbrains.plugins.grails.perspectives.DomainClassesRelationsEditorProvider">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/grails-app/domain/alumno/Parent.groovy">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="22" column="39" selection-start="432" selection-end="432" vertical-scroll-proportion="0.5631399">
+          <folding />
+        </state>
+      </provider>
+      <provider editor-type-id="org.jetbrains.plugins.grails.perspectives.DomainClassesRelationsEditorProvider">
+        <state />
       </provider>
     </entry>
   </component>

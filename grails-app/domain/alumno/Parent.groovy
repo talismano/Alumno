@@ -17,4 +17,9 @@ class Parent {
     static belongsTo = [
             household: Household
     ]
+
+    @Override
+    public String toString ( ) {
+        "$id - ${firstName} ${lastName}"
+    }
 }
