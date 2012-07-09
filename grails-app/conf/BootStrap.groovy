@@ -1,18 +1,21 @@
+
+import alumno.User
+import alumno.UserRole
+
 class BootStrap {
     def springSecurityService
 
 
     def init = { servletContext ->
 
-        def adminUser = SecUser.findByUsername('admin') ?: new SecUser(
+        def adminUser = User.findByUsername('admin') ?: new User(
                 username: 'admin',
                 password: 'lghsdirectory',
                 enabled: true).save(failOnError: true)
 
         if (!adminUser.authorities.contains(adminRole)) {
-            SecUserSecRole.create adminUser, adminRole
+            UserRole.create adminUser, ROLE_ADMIN
         }
-
 
     }
     def destroy = {
