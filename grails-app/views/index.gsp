@@ -110,8 +110,9 @@
 			   content you may choose. Below is a list of controllers that are currently deployed in this application,
 			   click on each to execute its default action:</p>
 
-            <g:link controller="Registration" action="importHSData">Import High School Data</g:link>
-            <g:link controller="Registration" action="importOnlineData">Import Online Data</g:link>
+            <g:link controller="Registration" action="importHSData"><input type="button" value="Import High School Data" class="button"/></g:link>
+            <br>
+            <g:link controller="Registration" action="importOnlineData"><input type="button" value="Import Online Data" class="button"/></g:link>
             <div id="controller-list" role="navigation">
 				<h2>Available Controllers:</h2>
 				<ul>
