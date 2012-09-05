@@ -3,9 +3,12 @@ package alumno
 class Student {
 
     static constraints = {
+        firstName()
+        lastName()
+        grade()
         phoneNumber(nullable: true)
         email(nullable: true)
-        grade(range:9..12)
+        grade(min:9, max:12)
       }
 
     String firstName
@@ -13,6 +16,8 @@ class Student {
     Integer grade
     String phoneNumber
     String email
+    boolean deleted
+    static transients = [ 'deleted' ]
 
     static belongsTo = [
             registration: Registration

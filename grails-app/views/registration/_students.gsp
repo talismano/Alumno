@@ -1,10 +1,10 @@
 <script type="text/javascript">
-    var childCount = ${contactInstance?.students.size()} + 0;
+    var childCount = ${registrationInstance?.students.size()} + 0;
 
     function addStudent(){
         var clone = $("#student_clone").clone()
         var htmlId = 'studentsList['+childCount+'].';
-        var studentInput = clone.find("input[id$=number]");
+        var studentInput = clone.find("input[id$=firstName]");
 
         clone.find("input[id$=id]")
                 .attr('id',htmlId + 'id')
@@ -16,11 +16,11 @@
                 .attr('id',htmlId + 'new')
                 .attr('name',htmlId + 'new')
                 .attr('value', 'true');
-        studentInput.attr('id',htmlId + 'number')
-                .attr('name',htmlId + 'number');
-        clone.find("select[id$=type]")
-                .attr('id',htmlId + 'type')
-                .attr('name',htmlId + 'type');
+        studentInput.attr('id',htmlId + 'firstName')
+                .attr('name',htmlId + 'firstName');
+        clone.find("select[id$=lastName]")
+                .attr('id',htmlId + 'lastName')
+                .attr('name',htmlId + 'lastName');
 
         clone.attr('id', 'student'+childCount);
         $("#childList").append(clone);
@@ -30,6 +30,7 @@
     }
 
     //bind click event on delete buttons using jquery live
+
     $('.del-student').live('click', function() {
         //find the parent div
         var prnt = $(this).parents(".student-div");
@@ -46,12 +47,13 @@
             //hide the div
             prnt.hide();
         }
+
     });
 
 </script>
 
 <div id="childList">
-    <g:each var="student" in="${contactInstance.students}" status="i">
+    <g:each var="student" in="${registrationInstance.students}" status="i">
 
         <!-- Render the student template (_student.gsp) here -->
         <g:render template='student' model="['student':student,'i':i,'hidden':false]"/>

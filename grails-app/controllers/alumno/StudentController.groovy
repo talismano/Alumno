@@ -1,6 +1,7 @@
 package alumno
 
 import org.springframework.dao.DataIntegrityViolationException
+import grails.plugins.springsecurity.Secured
 
 class StudentController {
 
@@ -10,6 +11,7 @@ class StudentController {
         redirect(action: "list", params: params)
     }
 
+    @Secured(['ROLE_ADMIN'])
     def list() {
         params.max = Math.min(params.max ? params.int('max') : 10, 100)
         [studentInstanceList: Student.list(params), studentInstanceTotal: Student.count()]

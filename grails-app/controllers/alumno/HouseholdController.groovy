@@ -4,6 +4,7 @@ import org.springframework.dao.DataIntegrityViolationException
 import groovy.json.JsonSlurper
 import grails.plugins.rest.client.RestBuilder
 import org.codehaus.groovy.grails.web.json.JSONObject
+import grails.plugins.springsecurity.Secured
 
 
 class HouseholdController {
@@ -14,6 +15,7 @@ class HouseholdController {
         redirect(action: "list", params: params)
     }
 
+    @Secured(['ROLE_ADMIN'])
     def list() {
         params.max = Math.min(params.max ? params.int('max') : 10, 100)
         [householdInstanceList: Household.list(params), householdInstanceTotal: Household.count()]

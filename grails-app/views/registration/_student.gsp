@@ -3,7 +3,7 @@
     <g:hiddenField name='studentsList[${i}].deleted' value='false'/>
     <g:hiddenField name='studentsList[${i}].new' value="${student?.id == null?'true':'false'}"/>
 
-    <f:with bean="studentInstance">
+    <f:with bean="student">
         <f:field property="firstName"/>
         <f:field property="lastName"/>
         <f:field property="grade"/>

@@ -1,5 +1,8 @@
 package alumno
 
+import org.apache.commons.collections.list.LazyList
+import org.apache.commons.collections.FactoryUtils
+
 
 class Household {
 
@@ -17,6 +20,9 @@ class Household {
     Integer zip
     Boolean safehome
     String phoneNumber
+    List parents = new ArrayList()
+    boolean deleted
+    static transients = [ 'deleted' ]
 
     static belongsTo = [
             registration: Registration
@@ -25,6 +31,12 @@ class Household {
     static hasMany = [
             parents: Parent
     ]
+
+    def getParentsList() {
+        return LazyList.decorate(
+                parents,
+                FactoryUtils.instantiateFactory(Parent.class))
+    }
 
     @Override
     public String toString ( ) {

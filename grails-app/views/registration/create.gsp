@@ -10,12 +10,6 @@
 	</head>
 	<body>
 		<a href="#create-registration" class="skip" tabindex="-1"><g:message code="default.link.skip.label" default="Skip to content&hellip;"/></a>
-		<div class="nav" role="navigation">
-			<ul>
-				<li><a class="home" href="${createLink(uri: '/')}"><g:message code="default.home.label"/></a></li>
-				<li><g:link class="list" action="list"><g:message code="default.list.label" args="[entityName]" /></g:link></li>
-			</ul>
-		</div>
 		<div id="create-registration" class="content scaffold-create" role="main">
 			<h1><g:message code="default.create.label" args="[entityName]" /></h1>
 			<g:if test="${flash.message}">
@@ -29,16 +23,10 @@
 			</ul>
 			</g:hasErrors>
 			<g:form action="save" >
-				<fieldset class="form">
-                    <f:with bean="studentInstance">
-                        <f:field property="firstName"/>
-                        <f:field property="lastName"/>
-                        <f:field property="grade"/>
-                        <f:field property="phoneNumber"/>
-                        <f:field property="email"/>
-                    </f:with>
-				</fieldset>
-				<fieldset class="buttons">
+                <!-- Render the registration template (_registration.gsp) here -->
+                <g:render template="registration" model="['registrationInstance':registrationInstance]"/>
+                <!-- Render the registration template (_registration.gsp) here -->
+                <fieldset class="buttons">
 					<g:submitButton name="create" class="save" value="${message(code: 'default.button.create.label', default: 'Create')}" />
 				</fieldset>
 			</g:form>

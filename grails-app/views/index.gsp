@@ -2,6 +2,7 @@
 <html>
 	<head>
 		<meta name="layout" content="main"/>
+        <r:require modules="bootstrap"/>
 		<title>Welcome to Grails</title>
 		<style type="text/css" media="screen">
 			#status {
@@ -109,7 +110,9 @@
 			   content you may choose. Below is a list of controllers that are currently deployed in this application,
 			   click on each to execute its default action:</p>
 
-			<div id="controller-list" role="navigation">
+            <g:link controller="Registration" action="importHSData">Import High School Data</g:link>
+            <g:link controller="Registration" action="importOnlineData">Import Online Data</g:link>
+            <div id="controller-list" role="navigation">
 				<h2>Available Controllers:</h2>
 				<ul>
 					<g:each var="c" in="${grailsApplication.controllerClasses.sort { it.fullName } }">

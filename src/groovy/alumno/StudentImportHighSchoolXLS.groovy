@@ -14,7 +14,7 @@ import org.grails.plugins.excelimport.ExcelImportService
 
 class StudentImportHighSchoolXLS extends AbstractExcelImporter {
 
-    static Map CONFIG_BOOK_COLUMN_MAP = [sheet:'Query1', startRow: 2, columnMap:[ 'C' : 'lastName','D':'firstName', 'E':'grade' ,
+    static Map CONFIG_STUDENT_COLUMN_MAP = [sheet:'Query1', startRow: 2, columnMap:[ 'C' : 'lastName','D':'firstName', 'E':'grade' ,
             'F' :'homePhone', 'G': 'parentNames', 'H': 'householdAddress', 'I': 'city', 'K': 'zip']]
 
     static Map propertyConfigurationMap = [
@@ -25,14 +25,14 @@ class StudentImportHighSchoolXLS extends AbstractExcelImporter {
             parentNames:([expectedType: ExpectedPropertyType.StringType, defaultValue:null]),
             householdAddress:([expectedType: ExpectedPropertyType.StringType, defaultValue:null]),
             city:([expectedType: ExpectedPropertyType.StringType, defaultValue:null]),
-            zip:([expectedType: ExpectedPropertyType.IntType, defaultValue:null])]
+            zip:([expectedType: ExpectedPropertyType.IntType, defaultValue:'95030'])]
 
     public StudentImportHighSchoolXLS(fileName){
         super(fileName)
     }
 
     List<Map> getStudents(){
-        List studentList = ExcelImportService.service.convertColumnMapConfigManyRows(workbook,CONFIG_BOOK_COLUMN_MAP,null,null,propertyConfigurationMap)
+        List studentList = ExcelImportService.service.convertColumnMapConfigManyRows(workbook,CONFIG_STUDENT_COLUMN_MAP,null,null,propertyConfigurationMap)
         return studentList
     }
 }

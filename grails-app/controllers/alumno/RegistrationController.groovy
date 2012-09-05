@@ -8,10 +8,10 @@ class RegistrationController {
     static allowedMethods = [save: "POST", update: "POST", delete: "POST"]
 
     def index() {
-        redirect(action: "create", params: params)
+        redirect(action: "list", params: params)
     }
 
-    @Secured(['ROLE_ADMIN'])
+//    @Secured(['ROLE_ADMIN'])
     def list() {
         params.max = Math.min(params.max ? params.int('max') : 10, 100)
         [registrationInstanceList: Registration.list(params), registrationInstanceTotal: Registration.count()]
@@ -19,14 +19,26 @@ class RegistrationController {
 
     def create() {
         [registrationInstance: new Registration(params)]
-        [studentInstance: new Student()]
+    }
+
+    def importHSData() {
+        def importData = new ImportDataService()
+        importData.importHighSchoolData()
+     //    flash.message = message("Data imported")
+        redirect(action: "list")
+    }
+
+    def importOnlineData() {
+        def importData = new ImportDataService()
+        importData.importOnlineData()
+        //    flash.message = message("Data imported")
+        redirect(action: "list")
     }
 
     def save() {
         def registrationInstance = new Registration(params)
         registrationInstance.ipAddress = request.getRemoteAddr()
         if (!registrationInstance.save(flush: true)) {
-            studentInstance.save(flush: true)
             render(view: "create", model: [registrationInstance: registrationInstance])
             return
         }
@@ -87,7 +99,7 @@ class RegistrationController {
         redirect(action: "show", id: registrationInstance.id)
     }
 
-    @Secured(['ROLE_ADMIN'])
+ //   @Secured(['ROLE_ADMIN'])
     def delete() {
         def registrationInstance = Registration.get(params.id)
         if (!registrationInstance) {

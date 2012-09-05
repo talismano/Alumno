@@ -96,3 +96,7 @@ log4j = {
 grails.plugins.springsecurity.userLookup.userDomainClassName = 'alumno.User'
 grails.plugins.springsecurity.userLookup.authorityJoinClassName = 'alumno.UserRole'
 grails.plugins.springsecurity.authority.className = 'alumno.Role'
+
+// Added for twitter bootstrap plugin
+grails.plugins.twitterbootstrap.fixtaglib = true
+grails.plugins.twitterbootstrap.defaultBundle = 'bundle_bootstrap'

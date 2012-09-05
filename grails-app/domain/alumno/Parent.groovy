@@ -13,6 +13,8 @@ class Parent {
     String lastName
     String phoneNumber
     String email
+    boolean deleted
+    static transients = [ 'deleted' ]
 
     static belongsTo = [
             household: Household
