@@ -20,12 +20,12 @@ class StudentImportHighSchoolXLS extends AbstractExcelImporter {
     static Map propertyConfigurationMap = [
             lastName:([expectedType: ExpectedPropertyType.StringType, defaultValue:null]),
             firstName:([expectedType: ExpectedPropertyType.StringType, defaultValue:null]),
-            grade:([expectedType: ExpectedPropertyType.IntType, defaultValue:null]),
+            grade:([expectedType: ExpectedPropertyType.IntType, defaultValue:13]),
             homePhone:([expectedType: ExpectedPropertyType.StringType, defaultValue:null]),
             parentNames:([expectedType: ExpectedPropertyType.StringType, defaultValue:null]),
             householdAddress:([expectedType: ExpectedPropertyType.StringType, defaultValue:null]),
             city:([expectedType: ExpectedPropertyType.StringType, defaultValue:null]),
-            zip:([expectedType: ExpectedPropertyType.IntType, defaultValue:'95030'])]
+            zip:([expectedType: ExpectedPropertyType.IntType, defaultValue:95030])]
 
     public StudentImportHighSchoolXLS(fileName){
         super(fileName)
