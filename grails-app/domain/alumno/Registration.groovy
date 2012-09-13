@@ -9,7 +9,7 @@ class Registration {
     }
 
     Date dateCreated
-    String ipAddress
+    Double ipAddress
     List students = new ArrayList()
     List households = new ArrayList()
 
@@ -21,18 +21,6 @@ class Registration {
     static mapping = {
         students cascade:"all-delete-orphan"
         households cascase:"all-delete-orphan"
-    }
-
-    def getStudentsList() {
-        return LazyList.decorate(
-                students,
-                FactoryUtils.instantiateFactory(Student.class))
-    }
-
-    def getHouseholdsList() {
-        return LazyList.decorate(
-                households,
-                FactoryUtils.instantiateFactory(Household.class))
     }
 
     @Override

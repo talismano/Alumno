@@ -17,7 +17,7 @@ class Household {
     String address
     String city
     String state
-    Integer zip
+    String zip
     Boolean safehome
     String phoneNumber
     List parents = new ArrayList()
@@ -31,12 +31,6 @@ class Household {
     static hasMany = [
             parents: Parent
     ]
-
-    def getParentsList() {
-        return LazyList.decorate(
-                parents,
-                FactoryUtils.instantiateFactory(Parent.class))
-    }
 
     @Override
     public String toString ( ) {

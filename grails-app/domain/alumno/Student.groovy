@@ -8,7 +8,7 @@ class Student {
         grade()
         phoneNumber(nullable: true)
         email(nullable: true)
-        grade(min:9, max:12)
+        grade(min:9, max:13) //13 in case parent didn't enter grade
       }
 
     String firstName
