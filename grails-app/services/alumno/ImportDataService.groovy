@@ -15,43 +15,45 @@ class ImportDataService {
         StudentImportHighSchoolXLS importer = new StudentImportHighSchoolXLS('/lghsStudents.xlsx')
         def studentsMapList = importer.getStudents()
         for (it in studentsMapList) {
-            def matchingExistingStudent = Student.findByLastNameIlikeAndFirstNameIlike(it.lastName, it.firstName)
-            if (!matchingExistingStudent){
-                Registration theReg = new Registration()
-                theReg.setIpAddress(-1)
-                theReg.save(flush: true)
-                Student theStudent = new Student()
-                theStudent.setLastName(it.lastName)
-                theStudent.setFirstName(it.firstName)
-                theStudent.setGrade(it.grade.toInteger())
-                theReg.addToStudents(theStudent)
-                theStudent.save()
-                Household theHousehold = new Household()
-                theHousehold.setAddress(it.householdAddress)
-                def cityAbbreviation = highschoolCityList[(it.city?: "Los Gatos")]
-                theHousehold.setCity(cityAbbreviation)
-                theHousehold.setZip(it.zip)
-                theHousehold.setState('CA')
-                theHousehold.setSafehome(false)
-                def householdPhone = convertToStandardPhoneFormat(it.homePhone)
-                theHousehold.setPhoneNumber(strip408AreaCode(householdPhone))
-                theReg.addToHouseholds(theHousehold)
-                theHousehold.save(flush: true)
-                def parentStrings = splitParentNameCell(it.parentNames);
-                parentStrings.reverseEach { parentString ->
-                    Parent theParent = new Parent()
-                    def firstAndLastNames = getParentNamesFromString(parentString, it.lastName)
-                    theParent.setFirstName(firstAndLastNames[0])
-                    if (firstAndLastNames[1])
-                        theParent.setLastName(firstAndLastNames[1])
-                    else
-                        theParent.setLastName(theHousehold.getParents()[0]?.getLastName())  //bit of a hack but there are only two parents
-                    theHousehold.addToParents(theParent)
-                    theParent.save()
+            if (!it.denied) {
+                def matchingExistingStudent = Student.findByLastNameIlikeAndFirstNameIlike(it.lastName, it.firstName)
+                if (!matchingExistingStudent){
+                    Registration theReg = new Registration()
+                    theReg.setIpAddress(-1)
+                    theReg.save()
+                    Student theStudent = new Student()
+                    theStudent.setLastName(it.lastName)
+                    theStudent.setFirstName(it.firstName)
+                    theStudent.setGrade(it.grade.toInteger())
+                    theReg.addToStudents(theStudent)
+                    theStudent.save()
+                    Household theHousehold = new Household()
+                    theHousehold.setAddress(it.householdAddress)
+                    def cityAbbreviation = highschoolCityList[(it.city?: "Los Gatos")]
+                    theHousehold.setCity(cityAbbreviation)
+                    theHousehold.setZip(it.zip)
+                    theHousehold.setState('CA')
+                    theHousehold.setSafehome(false)
+                    def householdPhone = convertToStandardPhoneFormat(it.homePhone)
+                    theHousehold.setPhoneNumber(strip408AreaCode(householdPhone))
+                    theReg.addToHouseholds(theHousehold)
+                    theHousehold.save()
+                    def parentStrings = splitParentNameCell(it.parentNames);
+                    parentStrings.reverseEach { parentString ->
+                        Parent theParent = new Parent()
+                        def firstAndLastNames = getParentNamesFromString(parentString, it.lastName)
+                        theParent.setFirstName(firstAndLastNames[0])
+                        if (firstAndLastNames[1])
+                            theParent.setLastName(firstAndLastNames[1])
+                        else
+                            theParent.setLastName(theHousehold.getParents()[0]?.getLastName())  //bit of a hack but there are only two parents
+                        theHousehold.addToParents(theParent)
+                        theParent.save()
+                    }
+                    theHousehold.save()
+                    theReg.save()
                 }
-                theHousehold.save()
-                theReg.save()
-           }
+            }
         }
     }
 
@@ -110,10 +112,10 @@ class ImportDataService {
             theReg.setIpAddress(it.ipAddress)
             theReg.setDateCreated(it.dateCreated)
             def regOnlineID = it.dbID
-            theReg.save(flush: true)
+            theReg.save()
             def listOfStudentsForThisReg = studentsMapList.findAll {studentMap -> studentMap.registrationDbID==regOnlineID}
             if (listOfStudentsForThisReg.size() == 0) {
-                theReg.delete(flush: true)
+                theReg.delete()
             }
             else {
                 listOfStudentsForThisReg.each() { studentMap ->
@@ -128,23 +130,21 @@ class ImportDataService {
                     theStudent.setPhoneNumber(strip408AreaCode(studentPhone))
                     theStudent.setEmail(studentMap.email)
                     theReg.addToStudents(theStudent)
-                    theStudent.save(flush: true)
+                    theStudent.save()
                 }
                 def listOfHouseholdsForThisReg = householdsMapList.findAll {householdMap -> householdMap.registrationDbID==regOnlineID}
                 listOfHouseholdsForThisReg.each() { householdMap ->
                     Household theHousehold = new Household()
                     theHousehold.setAddress(householdMap.address)
-                    if (it.city == "Select a city")
-                        it.city = 1.0
                     def cityAbbreviation = onlineCityList[Integer.valueOf(it.city?.toInteger()?: 1)]
                     theHousehold.setCity(cityAbbreviation)
-                    theHousehold.setZip(householdMap.zip)
+                    theHousehold.setZip(householdMap.zip?: "95030")
                     theHousehold.setState('CA')
                     theHousehold.setSafehome(householdMap.safeHouse!=0.0)
                     def phoneNumber = convertToStandardPhoneFormat(householdMap.phoneNumber)
                     theHousehold.setPhoneNumber(strip408AreaCode(phoneNumber))
                     theReg.addToHouseholds(theHousehold)
-                    theHousehold.save(flush: true)
+                    theHousehold.save()
                     def householdOnlineID = householdMap.dbID
                     def listOfParentsForThisHousehold= parentsMapList.findAll {parentMap -> parentMap.householdDbID==householdOnlineID}
                     listOfParentsForThisHousehold.each() { parentMap ->
@@ -159,7 +159,7 @@ class ImportDataService {
                     }
                     theHousehold.save()
                 }
-                theReg.save(flush: true)
+                theReg.save()
             }
         }
     }

@@ -16,17 +16,17 @@ import com.itextpdf.text.pdf.BaseFont;
 import com.itextpdf.text.pdf.ColumnText;
 import com.itextpdf.text.pdf.PdfContentByte;
 import com.itextpdf.text.pdf.PdfPCell;
-import com.itextpdf.text.pdf.PdfPCellEvent;
 import com.itextpdf.text.pdf.PdfPTable;
 import com.itextpdf.text.pdf.PdfPageEventHelper;
 import com.itextpdf.text.pdf.PdfWriter;
 import com.itextpdf.text.pdf.draw.DottedLineSeparator
-import java.util.logging.Logger
-import java.util.logging.Level;
+
 
 class CreateDirectoryService {
 
     public static final float[][] COLUMNS = [[36, 36, 185, 562] , [ 209, 36, 358, 562 ]]
+
+    def MAX_NUM_OF_PARENT_ROWS = 34
 
     def createPDF() {
         // Now setup PDF output document
@@ -57,7 +57,7 @@ class CreateDirectoryService {
         writer.setCompressionLevel(0);
 
         writeStudentRecords(writer, document);
- //       writeDifferentNamedParentsResults(writer,document);
+        writeDifferentNamedParentsResults(writer,document);
 
         document.close();
     }
@@ -207,15 +207,106 @@ class CreateDirectoryService {
     }
 
 
-        /*   class CustomCell implements PdfPCellEvent {
-                public void cellLayout(PdfPCell cell, Rectangle rect,
-                                       PdfContentByte[] canvas) {
-                    PdfContentByte cb = canvas[PdfPTable.LINECANVAS];
-                    float[] a = [1.0f, 1.0f]
-                    cb.setLineDash(a, 0);
-                    cb.setColorStroke(BaseColor.GRAY);
-                    cb.stroke();
+    public void writeDifferentNamedParentsResults(PdfWriter writer, Document document) throws DocumentException {
+
+        // Create table with four columns
+        PdfPTable table = new PdfPTable(4);
+        table.setWidthPercentage(100);
+        float[] columnWidths = [100f, 120f, 110f, 90f]
+        table.setWidths(columnWidths);
+        table.getDefaultCell().setHorizontalAlignment(Element.ALIGN_CENTER);
+
+        document.newPage();
+        writeDifferentNamedParentHeader(table);
+
+        // write out names
+        table.getDefaultCell().setHorizontalAlignment(Element.ALIGN_LEFT);
+        def parentsWithDifferentNames =  buildParentsWithDifferentLastNames()
+        parentsWithDifferentNames.eachWithIndex(){ differentParent, index ->
+            if (index%MAX_NUM_OF_PARENT_ROWS == 0) {
+                document.add(table);
+                document.newPage();
+                table = new PdfPTable(4);
+                table.setWidthPercentage(100);
+                table.setWidths(columnWidths);
+                writeDifferentNamedParentHeader(table);
+            }
+            cell = new PdfPCell(new Phrase((differentParent.getValue()[0].toString()),FontFactory.getFont(FontFactory.TIMES_ROMAN, 9)));
+            cell.setBorderColor(BaseColor.GRAY)
+            table.addCell(cell);
+            cell = new PdfPCell(new Phrase((differentParent.getValue()[1].toString()),FontFactory.getFont(FontFactory.TIMES_ROMAN, 9)));
+            cell.setBorderColor(BaseColor.GRAY)
+            table.addCell(cell);
+            cell = new PdfPCell(new Phrase((differentParent.getValue()[2].toString()),FontFactory.getFont(FontFactory.TIMES_ROMAN, 9)));
+            cell.setBorderColor(BaseColor.GRAY)
+            table.addCell(cell);
+            cell = new PdfPCell(new Phrase((differentParent.getValue()[3].toString()),FontFactory.getFont(FontFactory.TIMES_ROMAN, 9)));
+            cell.setBorderColor(BaseColor.GRAY)
+            table.addCell(cell);
+        }
+
+        try {
+            document.add(table);
+        }
+        catch (DocumentException ex) {
+        }
+
+    }
+
+    def createNewPageForDifferentNamedParent() {
+
+    }
+
+    public void writeDifferentNamedParentHeader(PdfPTable table) {
+        // we add a cell with title
+        Phrase title = new Phrase("Parents With Last Names Different From Students", FontFactory.getFont(FontFactory.TIMES_BOLD, 14));
+        PdfPCell cell = new PdfPCell();
+        cell.setColspan(4);
+        cell.addElement(title);
+        table.addCell(cell);
+        // now we add a cell with parent title
+        Phrase parentHeader = new Phrase("Parent", FontFactory.getFont(FontFactory.TIMES_ROMAN, 14));
+        cell = new PdfPCell();
+        cell.setColspan(2);
+        cell.addElement(parentHeader);
+        cell.setHorizontalAlignment(Element.ALIGN_CENTER);
+        table.addCell(cell);
+        // now we add a cell with student title
+        Phrase studentHeader = new Phrase("Student", FontFactory.getFont(FontFactory.TIMES_ROMAN, 14));
+        cell = new PdfPCell();
+        cell.setColspan(2);
+        cell.addElement(studentHeader);
+        cell.setHorizontalAlignment(Element.ALIGN_CENTER);
+        table.addCell(cell);
+        // now "Last Name" and "First Name" headers
+        Phrase lastNameTitle = new Phrase("Last Name", FontFactory.getFont(FontFactory.TIMES_BOLD, 10));
+        Phrase firstNameTitle = new Phrase("First Name", FontFactory.getFont(FontFactory.TIMES_BOLD, 10));
+        cell = new PdfPCell();
+        cell.addElement(lastNameTitle);
+        table.addCell(cell);
+        cell = new PdfPCell();
+        cell.addElement(firstNameTitle);
+        table.addCell(cell);
+        cell = new PdfPCell();
+        cell.addElement(lastNameTitle);
+        table.addCell(cell);
+        cell = new PdfPCell();
+        cell.addElement(firstNameTitle);
+        table.addCell(cell);
+    }
+
+    def buildParentsWithDifferentLastNames(){
+        def totalParentList = Parent.listOrderByLastName()
+        def parentsWithDifferentLastNames = [:]
+        totalParentList.each {
+            def studentsInHouse = it.getHousehold().getRegistration().getStudents()
+            studentsInHouse.each { student ->
+                def currentStudentLastName = student.getLastName()
+                if (currentStudentLastName != it.lastName) {
+                    parentsWithDifferentLastNames.put((it.lastName),[it.lastName,it.firstName,student.getLastName(),student.getFirstName()])
                 }
             }
-        */
-}
+        }
+        return parentsWithDifferentLastNames
+    }
+ }

@@ -14,10 +14,11 @@ import org.grails.plugins.excelimport.ExcelImportService
 
 class StudentImportHighSchoolXLS extends AbstractExcelImporter {
 
-    static Map CONFIG_STUDENT_COLUMN_MAP = [sheet:'Query1', startRow: 2, columnMap:[ 'C' : 'lastName','D':'firstName', 'E':'grade' ,
-            'F' :'homePhone', 'G': 'parentNames', 'H': 'householdAddress', 'I': 'city', 'K': 'zip']]
+    static Map CONFIG_STUDENT_COLUMN_MAP = [sheet:'Query1', startRow: 2, columnMap:[ 'B':"denied", 'C' : 'lastName',
+            'D':'firstName', 'E':'grade' ,'F' :'homePhone', 'G': 'parentNames', 'H': 'householdAddress', 'I': 'city', 'K': 'zip']]
 
     static Map propertyConfigurationMap = [
+            denied:([expectedType: ExpectedPropertyType.StringType, defaultValue: null]),
             lastName:([expectedType: ExpectedPropertyType.StringType, defaultValue:null]),
             firstName:([expectedType: ExpectedPropertyType.StringType, defaultValue:null]),
             grade:([expectedType: ExpectedPropertyType.IntType, defaultValue:13]),
