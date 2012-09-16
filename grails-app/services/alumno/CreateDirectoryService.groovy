@@ -209,29 +209,15 @@ class CreateDirectoryService {
 
     public void writeDifferentNamedParentsResults(PdfWriter writer, Document document) throws DocumentException {
 
-        // Create table with four columns
-        PdfPTable table = new PdfPTable(4);
-        table.setWidthPercentage(100);
-        float[] columnWidths = [100f, 120f, 110f, 90f]
-        table.setWidths(columnWidths);
-        table.getDefaultCell().setHorizontalAlignment(Element.ALIGN_CENTER);
-
-        document.newPage();
-        writeDifferentNamedParentHeader(table);
-
-        // write out names
-        table.getDefaultCell().setHorizontalAlignment(Element.ALIGN_LEFT);
+        PdfPTable table;
         def parentsWithDifferentNames =  buildParentsWithDifferentLastNames()
         parentsWithDifferentNames.eachWithIndex(){ differentParent, index ->
             if (index%MAX_NUM_OF_PARENT_ROWS == 0) {
-                document.add(table);
-                document.newPage();
-                table = new PdfPTable(4);
-                table.setWidthPercentage(100);
-                table.setWidths(columnWidths);
-                writeDifferentNamedParentHeader(table);
+                if (index > 0)
+                    document.add(table)
+                table = createNewPageForDifferentNamedParent(document)
             }
-            cell = new PdfPCell(new Phrase((differentParent.getValue()[0].toString()),FontFactory.getFont(FontFactory.TIMES_ROMAN, 9)));
+            def cell = new PdfPCell(new Phrase((differentParent.getValue()[0].toString()),FontFactory.getFont(FontFactory.TIMES_ROMAN, 9)));
             cell.setBorderColor(BaseColor.GRAY)
             table.addCell(cell);
             cell = new PdfPCell(new Phrase((differentParent.getValue()[1].toString()),FontFactory.getFont(FontFactory.TIMES_ROMAN, 9)));
@@ -244,17 +230,20 @@ class CreateDirectoryService {
             cell.setBorderColor(BaseColor.GRAY)
             table.addCell(cell);
         }
-
-        try {
-            document.add(table);
-        }
-        catch (DocumentException ex) {
-        }
-
+        document.add(table) //last partial table
     }
 
-    def createNewPageForDifferentNamedParent() {
+    def createNewPageForDifferentNamedParent(document) {
+        PdfPTable table = new PdfPTable(4);
+        table.setWidthPercentage(100);
+        float[] columnWidths = [100f, 120f, 110f, 90f]
+        table.setWidths(columnWidths);
+        table.getDefaultCell().setHorizontalAlignment(Element.ALIGN_CENTER);
 
+        document.newPage();
+        writeDifferentNamedParentHeader(table);
+        table.getDefaultCell().setHorizontalAlignment(Element.ALIGN_LEFT);
+        return table
     }
 
     public void writeDifferentNamedParentHeader(PdfPTable table) {

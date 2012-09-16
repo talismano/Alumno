@@ -38,7 +38,7 @@ class ImportDataService {
                     theHousehold.setPhoneNumber(strip408AreaCode(householdPhone))
                     theReg.addToHouseholds(theHousehold)
                     theHousehold.save()
-                    def parentStrings = splitParentNameCell(it.parentNames);
+                    def parentStrings = splitParentNameCell(it.parentNames, "&");
                     parentStrings.reverseEach { parentString ->
                         Parent theParent = new Parent()
                         def firstAndLastNames = getParentNamesFromString(parentString, it.lastName)
@@ -57,9 +57,7 @@ class ImportDataService {
         }
     }
 
-    public String[] splitParentNameCell(String sentence) {
-        String splitPattern = "&";
-
+    public String[] splitParentNameCell(String sentence, String splitPattern) {
         String[] tokens = sentence.split(splitPattern);
         // remove leading and trailing whitespace from strings
         int numOfParentsFound = tokens.length;

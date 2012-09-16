@@ -14,14 +14,14 @@ import org.grails.plugins.excelimport.ExcelImportService
 
 class OnlineImportXLS extends AbstractExcelImporter {
 
-    static Map CONFIG_REGISTRATION_COLUMN_MAP = [sheet:'registration', startRow: 1, columnMap:[ 'A' : 'dbID','B':'dateCreated', 'C':'ipAddress']]
+    static Map CONFIG_REGISTRATION_COLUMN_MAP = [sheet:'registration', startRow: 0, columnMap:[ 'A' : 'dbID','B':'dateCreated', 'C':'ipAddress']]
 
     static Map propertyRegistrationConfigurationMap = [
             dbID:([expectedType: ExpectedPropertyType.IntType, defaultValue:null]),
             dateCreated:([expectedType: ExpectedPropertyType.DateJavaType, defaultValue:null]),
             ipAddress:([expectedType: ExpectedPropertyType.IntType, defaultValue:null])]
 
-    static Map CONFIG_STUDENT_COLUMN_MAP = [sheet:'students', startRow: 1, columnMap:[ 'A' : 'dbID','B':'lastName', 'C':'firstName', 'D':'grade',
+    static Map CONFIG_STUDENT_COLUMN_MAP = [sheet:'students', startRow: 0, columnMap:[ 'A' : 'dbID','B':'lastName', 'C':'firstName', 'D':'grade',
             'E':'phoneNumber', 'F':'email', 'G':'registrationDbID']]
 
     static Map propertyStudentConfigurationMap = [
@@ -33,7 +33,7 @@ class OnlineImportXLS extends AbstractExcelImporter {
             email:([expectedType: ExpectedPropertyType.StringType, defaultValue:null]),
             registrationDbID:([expectedType: ExpectedPropertyType.IntType, defaultValue:null])]
 
-    static Map CONFIG_HOUSEHOLD_COLUMN_MAP = [sheet:'households', startRow: 1, columnMap:[ 'A' : 'dbID','B':'address', 'C':'city', 'E':'zip',
+    static Map CONFIG_HOUSEHOLD_COLUMN_MAP = [sheet:'households', startRow: 0, columnMap:[ 'A' : 'dbID','B':'address', 'C':'city', 'E':'zip',
             'F':'safeHouse', 'G':'phoneNumber', 'H':'registrationDbID']]
 
     static Map propertyHouseholdConfigurationMap = [
@@ -45,7 +45,7 @@ class OnlineImportXLS extends AbstractExcelImporter {
             phoneNumber:([expectedType: ExpectedPropertyType.StringType, defaultValue:null]),
             registrationDbID:([expectedType: ExpectedPropertyType.IntType, defaultValue:null])]
 
-    static Map CONFIG_PARENT_COLUMN_MAP = [sheet:'parents', startRow: 1, columnMap:[ 'A' : 'dbID','B':'lastName', 'C':'firstName', 'D':'phoneNumber',
+    static Map CONFIG_PARENT_COLUMN_MAP = [sheet:'parents', startRow: 0, columnMap:[ 'A' : 'dbID','B':'lastName', 'C':'firstName', 'D':'phoneNumber',
             'E':'email', 'F':'householdDbID']]
 
     static Map propertyParentConfigurationMap = [
@@ -62,8 +62,8 @@ class OnlineImportXLS extends AbstractExcelImporter {
     }
 
     List<Map> getRegistrations(){
-        List studentList = ExcelImportService.service.convertColumnMapConfigManyRows(workbook,CONFIG_REGISTRATION_COLUMN_MAP,null,null,propertyRegistrationConfigurationMap)
-        return studentList
+        List registrationList = ExcelImportService.service.convertColumnMapConfigManyRows(workbook,CONFIG_REGISTRATION_COLUMN_MAP,null,null,propertyRegistrationConfigurationMap)
+        return registrationList
     }
 
     List<Map> getStudents(){

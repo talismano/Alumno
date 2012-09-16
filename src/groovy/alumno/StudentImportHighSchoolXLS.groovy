@@ -14,7 +14,7 @@ import org.grails.plugins.excelimport.ExcelImportService
 
 class StudentImportHighSchoolXLS extends AbstractExcelImporter {
 
-    static Map CONFIG_STUDENT_COLUMN_MAP = [sheet:'Query1', startRow: 2, columnMap:[ 'B':"denied", 'C' : 'lastName',
+    static Map CONFIG_STUDENT_COLUMN_MAP = [sheet:'Query1', startRow: 1, columnMap:[ 'B':"denied", 'C' : 'lastName',
             'D':'firstName', 'E':'grade' ,'F' :'homePhone', 'G': 'parentNames', 'H': 'householdAddress', 'I': 'city', 'K': 'zip']]
 
     static Map propertyConfigurationMap = [
