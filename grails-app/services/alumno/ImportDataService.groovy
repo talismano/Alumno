@@ -15,7 +15,7 @@ class ImportDataService {
         StudentImportHighSchoolXLS importer = new StudentImportHighSchoolXLS('/lghsStudents.xlsx')
         def studentsMapList = importer.getStudents()
         for (it in studentsMapList) {
-            def matchingExistingStudent = Student.findByLastNameAndFirstName(it.lastName, it.firstName)
+            def matchingExistingStudent = Student.findByLastNameIlikeAndFirstNameIlike(it.lastName, it.firstName)
             if (!matchingExistingStudent){
                 Registration theReg = new Registration()
                 theReg.setIpAddress(-1)
@@ -134,6 +134,8 @@ class ImportDataService {
                 listOfHouseholdsForThisReg.each() { householdMap ->
                     Household theHousehold = new Household()
                     theHousehold.setAddress(householdMap.address)
+                    if (it.city == "Select a city")
+                        it.city = 1.0
                     def cityAbbreviation = onlineCityList[Integer.valueOf(it.city?.toInteger()?: 1)]
                     theHousehold.setCity(cityAbbreviation)
                     theHousehold.setZip(householdMap.zip)

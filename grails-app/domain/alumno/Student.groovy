@@ -2,6 +2,8 @@ package alumno
 
 class Student {
 
+    static searchable = true
+
     static constraints = {
         firstName()
         lastName()

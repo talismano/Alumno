@@ -2,6 +2,8 @@ package alumno
 
 class Parent {
 
+    static searchable = true
+
     static constraints = {
         firstName(nullable: true)
         lastName(nullable: true)

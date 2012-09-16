@@ -5,6 +5,8 @@ import org.apache.commons.collections.FactoryUtils
 
 class Registration {
 
+    static searchable = true
+
     static constraints = {
     }
 

@@ -6,6 +6,8 @@ import org.apache.commons.collections.FactoryUtils
 
 class Household {
 
+    static searchable = true
+
     static constraints = {
         address(nullable: true)
         city(nullable: true)
