@@ -21,6 +21,7 @@ class Registration {
     static mapping = {
         students cascade:"all-delete-orphan"
         households cascase:"all-delete-orphan"
+        sort "ipAddress"
     }
 
     @Override

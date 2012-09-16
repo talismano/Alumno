@@ -106,10 +106,9 @@
 		<div id="page-body" role="main">
 			<h1>Alumno</h1>
 			<p></p>
-
-            <g:link controller="Registration" action="importHSData"><input type="button" value="Import High School Data" class="button"/></g:link>
-            <br>
             <g:link controller="Registration" action="importOnlineData"><input type="button" value="Import Online Data" class="button"/></g:link>
+            <g:link controller="Registration" action="importHSData"><input type="button" value="Import High School Data" class="button"/></g:link>
+            <g:link controller="Registration" action="createPDF"><input type="button" value="Create Directory" class="button"/></g:link>
             <div id="controller-list" role="navigation">
 				<h2>Available Controllers:</h2>
 				<ul>

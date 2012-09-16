@@ -22,6 +22,6 @@ class Parent {
 
     @Override
     public String toString ( ) {
-        "$id - ${firstName} ${lastName}"
+        "$id - ${firstName} ${lastName} ${phoneNumber} ${email}"
     }
 }

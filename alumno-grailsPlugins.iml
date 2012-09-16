@@ -75,10 +75,13 @@
     <orderEntry type="inheritedJdk" />
     <orderEntry type="sourceFolder" forTests="false" />
     <orderEntry type="library" scope="PROVIDED" name="grails-2.0.3" level="application" />
+    <orderEntry type="library" scope="PROVIDED" name="itextpdf-5.3.2" level="project" />
+    <orderEntry type="library" scope="PROVIDED" name="itext-xtra-5.3.2" level="project" />
     <orderEntry type="module-library" exported="">
       <library name="Grails User Library (alumno-grailsPlugins)">
         <CLASSES>
           <root url="file://$USER_HOME$/.grails/2.0.3/projects/alumno/plugins/excel-import-1.0.0/lib" />
+          <root url="file://$USER_HOME$/.grails/2.0.3/projects/alumno/plugins/joda-time-1.4/lib" />
           <root url="jar://$USER_HOME$/.grails/ivy-cache/org.jodd/jodd/jars/jodd-3.3.1.jar!/" />
           <root url="jar://$USER_HOME$/.grails/ivy-cache/asm/asm/jars/asm-3.2.jar!/" />
           <root url="jar://$USER_HOME$/.grails/ivy-cache/org.jodd/jodd-wot/jars/jodd-wot-3.3.1.jar!/" />
@@ -90,7 +93,6 @@
           <root url="jar://$USER_HOME$/.grails/ivy-cache/org.apache.poi/poi-ooxml-schemas/jars/poi-ooxml-schemas-3.7.jar!/" />
           <root url="jar://$USER_HOME$/.grails/ivy-cache/org.apache.poi/poi-ooxml/jars/poi-ooxml-3.7.jar!/" />
           <root url="jar://$USER_HOME$/.grails/ivy-cache/org.apache.poi/poi/jars/poi-3.7.jar!/" />
-          <root url="file://$USER_HOME$/.grails/2.0.3/projects/alumno/plugins/joda-time-1.4/lib" />
         </CLASSES>
         <JAVADOC />
         <SOURCES />

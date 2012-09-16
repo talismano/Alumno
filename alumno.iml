@@ -66,6 +66,8 @@
       </library>
     </orderEntry>
     <orderEntry type="module" module-name="alumno-grailsPlugins" />
+    <orderEntry type="library" name="itextpdf-5.3.2" level="project" />
+    <orderEntry type="library" name="itext-xtra-5.3.2" level="project" />
   </component>
 </module>
 

@@ -25,7 +25,7 @@ class StudentImportHighSchoolXLS extends AbstractExcelImporter {
             parentNames:([expectedType: ExpectedPropertyType.StringType, defaultValue:null]),
             householdAddress:([expectedType: ExpectedPropertyType.StringType, defaultValue:null]),
             city:([expectedType: ExpectedPropertyType.StringType, defaultValue:null]),
-            zip:([expectedType: ExpectedPropertyType.IntType, defaultValue:95030])]
+            zip:([expectedType: ExpectedPropertyType.StringType, defaultValue:"95030"])]
 
     public StudentImportHighSchoolXLS(fileName){
         super(fileName)

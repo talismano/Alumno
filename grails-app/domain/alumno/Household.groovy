@@ -34,7 +34,7 @@ class Household {
 
     @Override
     public String toString ( ) {
-        "$id - ${address}, ${city}"
+        "$id - ${address}, ${city}, ${zip}, ${phoneNumber}, SafeHome? ${safehome? 'Yes' : 'No'}"
     }
 
 }

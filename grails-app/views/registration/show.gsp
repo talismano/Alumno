@@ -34,11 +34,23 @@
 			
 				<g:if test="${registrationInstance?.households}">
 				<li class="fieldcontain">
-					<span id="households-label" class="property-label"><g:message code="registration.households.label" default="Households" /></span>
-					
-						<g:each in="${registrationInstance.households}" var="h">
+					<span id="households-label" class="property-label"><g:message code="registration.households.label" default="Household 1" /></span>
+						<g:each status="i" in="${registrationInstance.households}" var="h">
+                            <g:if test="${i > 0}">
+                                </li><li class="fieldcontain"><span id="households-label" class="property-label"><g:message code="registration.households.label" default="Household 2" /></span>
+                            </g:if>
+
 						<span class="property-value" aria-labelledby="households-label"><g:link controller="household" action="show" id="${h.id}">${h?.encodeAsHTML()}</g:link></span>
-						</g:each>
+                            <g:if test="${h?.parents}">
+                                <li class="fieldcontain">
+                                    <span id="parents-label" class="property-label"><g:message code="h.parents.label" default="Parents" /></span>
+                                    <g:each in="${h.parents}" var="p">
+                                        <span class="property-value" aria-labelledby="parents-label"><g:link controller="parent" action="show" id="${p.id}">${p?.encodeAsHTML()}</g:link></span>
+                                    </g:each>
+
+                                </li>
+                            </g:if>
+                        </g:each>
 					
 				</li>
 				</g:if>
@@ -57,14 +69,13 @@
 					<span id="students-label" class="property-label"><g:message code="registration.students.label" default="Students" /></span>
 					
 						<g:each in="${registrationInstance.students}" var="s">
-						<span class="property-value" aria-labelledby="students-label"><g:link controller="student" action="show" id="${s.id}">${s?.encodeAsHTML()}</g:link></span>
+                            <span class="property-value" aria-labelledby="students-label"><g:link controller="student" action="show" id="${s.id}">${s?.encodeAsHTML()}</g:link></span>
 						</g:each>
 					
 				</li>
 				</g:if>
-			
 			</ol>
-			<g:form>
+            <g:form>
 				<fieldset class="buttons">
 					<g:hiddenField name="id" value="${registrationInstance?.id}" />
 					<g:link class="edit" action="edit" id="${registrationInstance?.id}"><g:message code="default.button.edit.label" default="Edit" /></g:link>

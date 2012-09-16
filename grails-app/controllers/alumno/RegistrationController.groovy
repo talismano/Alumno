@@ -35,6 +35,13 @@ class RegistrationController {
         redirect(action: "list")
     }
 
+    def createPDF() {
+        def createDirectory = new CreateDirectoryService()
+        createDirectory.createPDF()
+        //    flash.message = message("Data imported")
+        redirect(action: "list")
+    }
+
     def save() {
         def registrationInstance = new Registration(params)
         registrationInstance.ipAddress = request.getRemoteAddr()

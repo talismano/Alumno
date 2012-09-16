@@ -25,7 +25,7 @@ class Student {
 
     @Override
     public String toString ( ) {
-        "$id - ${firstName} ${lastName}, ${grade}th grade"
+        "$id - ${firstName} ${lastName}, ${grade}th grade, ${phoneNumber}, ${email}"
     }
 
 }
