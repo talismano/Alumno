@@ -119,21 +119,21 @@ class ImportDataService {
                 listOfStudentsForThisReg.each() { studentMap ->
                     Student theStudent = new Student()
                     def studentLastName = studentMap.lastName ?: " "
-                    theStudent.setLastName(convertToFirstCaps(studentLastName))
+                    theStudent.setLastName(convertToFirstCaps(studentLastName?.trim()))
                     def studentFirstName = studentMap.firstName ?: " "
-                    theStudent.setFirstName(convertToFirstCaps(studentFirstName))
+                    theStudent.setFirstName(convertToFirstCaps(studentFirstName?.trim()))
                     def studentGrade = studentMap.grade ?: 13.0
                     theStudent.setGrade(studentGrade.toInteger())
                     def studentPhone = convertToStandardPhoneFormat(studentMap.phoneNumber)
                     theStudent.setPhoneNumber(strip408AreaCode(studentPhone))
-                    theStudent.setEmail(studentMap.email)
+                    theStudent.setEmail(studentMap.email?.trim())
                     theReg.addToStudents(theStudent)
                     theStudent.save()
                 }
                 def listOfHouseholdsForThisReg = householdsMapList.findAll {householdMap -> householdMap.registrationDbID==regOnlineID}
                 listOfHouseholdsForThisReg.each() { householdMap ->
                     Household theHousehold = new Household()
-                    theHousehold.setAddress(convertToFirstCaps(householdMap.address))
+                    theHousehold.setAddress(convertToFirstCaps(householdMap.address?.trim()))
                     def cityAbbreviation = onlineCityList[Integer.valueOf(it.city?.toInteger()?: 1)]
                     theHousehold.setCity(cityAbbreviation)
                     theHousehold.setZip(householdMap.zip?: "95030")
@@ -147,11 +147,11 @@ class ImportDataService {
                     def listOfParentsForThisHousehold= parentsMapList.findAll {parentMap -> parentMap.householdDbID==householdOnlineID}
                     listOfParentsForThisHousehold.each() { parentMap ->
                         Parent theParent = new Parent()
-                        theParent.setLastName(convertToFirstCaps(parentMap.lastName))
-                        theParent.setFirstName(convertToFirstCaps(parentMap.firstName))
+                        theParent.setLastName(convertToFirstCaps(parentMap.lastName?.trim()))
+                        theParent.setFirstName(convertToFirstCaps(parentMap.firstName?.trim()))
                         def parentPhoneNumber = convertToStandardPhoneFormat(parentMap.phoneNumber)
                         theParent.setPhoneNumber(strip408AreaCode(parentPhoneNumber))
-                        theParent.setEmail(parentMap.email)
+                        theParent.setEmail(parentMap.email?.trim())
                         theHousehold.addToParents(theParent)
                         theParent.save()
                     }
