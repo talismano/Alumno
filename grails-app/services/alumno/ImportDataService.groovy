@@ -119,9 +119,9 @@ class ImportDataService {
                 listOfStudentsForThisReg.each() { studentMap ->
                     Student theStudent = new Student()
                     def studentLastName = studentMap.lastName ?: " "
-                    theStudent.setLastName(studentLastName)
+                    theStudent.setLastName(convertToFirstCaps(studentLastName))
                     def studentFirstName = studentMap.firstName ?: " "
-                    theStudent.setFirstName(studentFirstName)
+                    theStudent.setFirstName(convertToFirstCaps(studentFirstName))
                     def studentGrade = studentMap.grade ?: 13.0
                     theStudent.setGrade(studentGrade.toInteger())
                     def studentPhone = convertToStandardPhoneFormat(studentMap.phoneNumber)
@@ -133,7 +133,7 @@ class ImportDataService {
                 def listOfHouseholdsForThisReg = householdsMapList.findAll {householdMap -> householdMap.registrationDbID==regOnlineID}
                 listOfHouseholdsForThisReg.each() { householdMap ->
                     Household theHousehold = new Household()
-                    theHousehold.setAddress(householdMap.address)
+                    theHousehold.setAddress(convertToFirstCaps(householdMap.address))
                     def cityAbbreviation = onlineCityList[Integer.valueOf(it.city?.toInteger()?: 1)]
                     theHousehold.setCity(cityAbbreviation)
                     theHousehold.setZip(householdMap.zip?: "95030")
@@ -147,8 +147,8 @@ class ImportDataService {
                     def listOfParentsForThisHousehold= parentsMapList.findAll {parentMap -> parentMap.householdDbID==householdOnlineID}
                     listOfParentsForThisHousehold.each() { parentMap ->
                         Parent theParent = new Parent()
-                        theParent.setLastName(parentMap.lastName)
-                        theParent.setFirstName(parentMap.firstName)
+                        theParent.setLastName(convertToFirstCaps(parentMap.lastName))
+                        theParent.setFirstName(convertToFirstCaps(parentMap.firstName))
                         def parentPhoneNumber = convertToStandardPhoneFormat(parentMap.phoneNumber)
                         theParent.setPhoneNumber(strip408AreaCode(parentPhoneNumber))
                         theParent.setEmail(parentMap.email)
@@ -161,6 +161,24 @@ class ImportDataService {
             }
         }
     }
+
+    def convertToFirstCaps (string) {
+        if (string) {
+            if (string.toUpperCase().equals(string) || string.toLowerCase().equals(string)) {
+                final StringBuilder result = new StringBuilder(string.length())
+                String[] words = string.split("\\s")
+                words.eachWithIndex {word, index ->
+                    if (index > 0)
+                        result.append(" ")
+                    result.append(Character.toUpperCase(word.charAt(0))).append(word.substring(1).toLowerCase())
+                }
+                return result.toString()
+            }
+        }
+        return string
+    }
+
+
 
     def convertToStandardPhoneFormat(String inputNumber) {
          // phone numbers could be multiple formats

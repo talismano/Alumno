@@ -191,7 +191,7 @@ class CreateDirectoryService {
 
     public String buildHouseholdAddress(String parentAddress, String parentCity, String parentZip) {
         StringBuilder parentAddressBuffer
-        if (!parentAddress.isEmpty()) {
+        if (parentAddress) {
             parentAddressBuffer = new StringBuilder(parentAddress);
             if (!parentCity.isEmpty()) {
                 parentAddressBuffer.append(", " + parentCity);
