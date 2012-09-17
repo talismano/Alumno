@@ -291,7 +291,7 @@ class CreateDirectoryService {
             def studentsInHouse = it.getHousehold().getRegistration().getStudents()
             studentsInHouse.each { student ->
                 def currentStudentLastName = student.getLastName()
-                if (currentStudentLastName != it.lastName) {
+                if (currentStudentLastName?.toLowerCase() != it.lastName?.toLowerCase()) {
                     parentsWithDifferentLastNames.put((it.lastName),[it.lastName,it.firstName,student.getLastName(),student.getFirstName()])
                 }
             }
