@@ -152,13 +152,20 @@ class CreateDirectoryService {
 
                 // Get parents from current household
                 def householdParents = currentHousehold.getParents()
-                householdParents.eachWithIndex { currentParent, j ->
-                    def parentFullName = currentParent.getFirstName() + " " + currentParent.getLastName()
-                    if (j)
-                        para.add(" & ")
-                    para.add(parentFullName)
+                // Ugly code to support ability to create Bob & Mary Smith from two parents instead of Bob Smith & Mary Smith
+                // original code is in else clause when last names differ
+                if (householdParents[0].getLastName() == householdParents[1]?.getLastName()) {
+                    para.add(householdParents[0].getFirstName() + " & " + householdParents[1]?.getFirstName() + " " + householdParents[0].getLastName())
                 }
-                para.add("\r")
+                else {
+                    householdParents.eachWithIndex { currentParent, j ->
+                        def parentFullName = currentParent.getFirstName() + " " + currentParent.getLastName()
+                        if (j)
+                            para.add(" & ")
+                        para.add(parentFullName)
+                    }
+                }
+                 para.add("\r")
 
                 // Current household address line
                 String householdAddress = buildHouseholdAddress(currentHousehold.getAddress(), currentHousehold.getCity(), currentHousehold.getZip())
