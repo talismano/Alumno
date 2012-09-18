@@ -294,12 +294,12 @@ class CreateDirectoryService {
     def buildParentsWithDifferentLastNames(){
         def totalParentList = Parent.listOrderByLastName()
         def parentsWithDifferentLastNames = [:]
-        totalParentList.each {
-            def studentsInHouse = it.getHousehold().getRegistration().getStudents()
+        totalParentList.eachWithIndex { parent, index ->
+            def studentsInHouse = parent.getHousehold().getRegistration().getStudents()
             studentsInHouse.each { student ->
                 def currentStudentLastName = student.getLastName()
-                if (currentStudentLastName?.toLowerCase() != it.lastName?.toLowerCase()) {
-                    parentsWithDifferentLastNames.put((it.lastName),[it.lastName,it.firstName,student.getLastName(),student.getFirstName()])
+                if (currentStudentLastName?.toLowerCase() != parent.lastName?.toLowerCase()) {
+                    parentsWithDifferentLastNames.put(index,[parent.lastName,parent.firstName,student.getLastName(),student.getFirstName()])
                 }
             }
         }
