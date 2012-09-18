@@ -224,16 +224,16 @@ class CreateDirectoryService {
                     document.add(table)
                 table = createNewPageForDifferentNamedParent(document)
             }
-            def cell = new PdfPCell(new Phrase((differentParent.getValue()[0].toString()),FontFactory.getFont(FontFactory.TIMES_ROMAN, 9)));
+            def cell = new PdfPCell(new Phrase((differentParent[0].toString()),FontFactory.getFont(FontFactory.TIMES_ROMAN, 9)));
             cell.setBorderColor(BaseColor.GRAY)
             table.addCell(cell);
-            cell = new PdfPCell(new Phrase((differentParent.getValue()[1].toString()),FontFactory.getFont(FontFactory.TIMES_ROMAN, 9)));
+            cell = new PdfPCell(new Phrase((differentParent[1].toString()),FontFactory.getFont(FontFactory.TIMES_ROMAN, 9)));
             cell.setBorderColor(BaseColor.GRAY)
             table.addCell(cell);
-            cell = new PdfPCell(new Phrase((differentParent.getValue()[2].toString()),FontFactory.getFont(FontFactory.TIMES_ROMAN, 9)));
+            cell = new PdfPCell(new Phrase((differentParent[2].toString()),FontFactory.getFont(FontFactory.TIMES_ROMAN, 9)));
             cell.setBorderColor(BaseColor.GRAY)
             table.addCell(cell);
-            cell = new PdfPCell(new Phrase((differentParent.getValue()[3].toString()),FontFactory.getFont(FontFactory.TIMES_ROMAN, 9)));
+            cell = new PdfPCell(new Phrase((differentParent[3].toString()),FontFactory.getFont(FontFactory.TIMES_ROMAN, 9)));
             cell.setBorderColor(BaseColor.GRAY)
             table.addCell(cell);
         }
@@ -293,13 +293,15 @@ class CreateDirectoryService {
 
     def buildParentsWithDifferentLastNames(){
         def totalParentList = Parent.listOrderByLastName()
-        def parentsWithDifferentLastNames = [:]
-        totalParentList.eachWithIndex { parent, index ->
-            def studentsInHouse = parent.getHousehold().getRegistration().getStudents()
-            studentsInHouse.each { student ->
-                def currentStudentLastName = student.getLastName()
-                if (currentStudentLastName?.toLowerCase() != parent.lastName?.toLowerCase()) {
-                    parentsWithDifferentLastNames.put(index,[parent.lastName,parent.firstName,student.getLastName(),student.getFirstName()])
+        def parentsWithDifferentLastNames = []
+        totalParentList.each { parent->
+            if (parent.lastName && parent.firstName) {
+                def studentsInHouse = parent.getHousehold().getRegistration().getStudents()
+                studentsInHouse.each { student ->
+                    def currentStudentLastName = student.getLastName()
+                    if (currentStudentLastName?.toLowerCase() != parent.lastName?.toLowerCase()) {
+                        parentsWithDifferentLastNames.add([parent.lastName,parent.firstName,student.getLastName(),student.getFirstName()])
+                    }
                 }
             }
         }
