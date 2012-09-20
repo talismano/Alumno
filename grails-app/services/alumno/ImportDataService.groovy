@@ -57,14 +57,18 @@ class ImportDataService {
         }
     }
 
-    public String[] splitParentNameCell(String sentence, String splitPattern) {
-        String[] tokens = sentence.split(splitPattern);
-        // remove leading and trailing whitespace from strings
-        int numOfParentsFound = tokens.length;
-        for (int i=0;i<numOfParentsFound;i++){
-            tokens[i] = tokens[i].trim();
+    def splitParentNameCell(String sentence, String splitPattern) {
+        def tokens
+
+        if (sentence) {
+            tokens = sentence.split(splitPattern)
+            // remove leading and trailing whitespace from strings
+            tokens.eachWithIndex { token, index ->
+                tokens[index] = token.trim()
+            }
         }
-        return tokens;
+
+        return tokens
     }
 
     public String[] getParentNamesFromString(String parentName, String childsLastName){
@@ -146,15 +150,30 @@ class ImportDataService {
                     def householdOnlineID = householdMap.dbID
                     def listOfParentsForThisHousehold= parentsMapList.findAll {parentMap -> parentMap.householdDbID==householdOnlineID}
                     listOfParentsForThisHousehold.each() { parentMap ->
+                        // first check to see if first name of "parent" is actually compound name "Bob & Mary"
+                        def parentStrings = splitParentNameCell(parentMap.firstName, "&")
+                        if (parentStrings?.length < 2)
+                            parentStrings = splitParentNameCell(parentMap.firstName, " and ")
                         Parent theParent = new Parent()
                         theParent.setLastName(convertToFirstCaps(parentMap.lastName?.trim()))
-                        theParent.setFirstName(convertToFirstCaps(parentMap.firstName?.trim()))
+                        if (parentStrings) {
+                            theParent.setFirstName(convertToFirstCaps(parentStrings[0]))
+                        } else
+                            theParent.setFirstName(null)
                         def parentPhoneNumber = convertToStandardPhoneFormat(parentMap.phoneNumber)
                         theParent.setPhoneNumber(strip408AreaCode(parentPhoneNumber))
                         theParent.setEmail(parentMap.email?.trim())
                         theHousehold.addToParents(theParent)
                         theParent.save()
-                    }
+                        if (parentStrings?.length == 2) {
+                            // add second parent that wasn't explicitly entered
+                            Parent the2ndParent = new Parent()
+                            the2ndParent.setLastName(convertToFirstCaps(parentMap.lastName?.trim()))
+                            the2ndParent.setFirstName(convertToFirstCaps(parentStrings[1]))
+                            theHousehold.addToParents(the2ndParent)
+                            the2ndParent.save()
+                        }
+                     }
                     theHousehold.save()
                 }
                 theReg.save()
