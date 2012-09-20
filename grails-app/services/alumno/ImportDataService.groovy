@@ -156,9 +156,9 @@ class ImportDataService {
                             parentStrings = splitParentNameCell(parentMap.firstName, " and ")
                         Parent theParent = new Parent()
                         theParent.setLastName(convertToFirstCaps(parentMap.lastName?.trim()))
-                        if (parentStrings) {
+                        if (parentStrings)
                             theParent.setFirstName(convertToFirstCaps(parentStrings[0]))
-                        } else
+                        else
                             theParent.setFirstName(null)
                         def parentPhoneNumber = convertToStandardPhoneFormat(parentMap.phoneNumber)
                         theParent.setPhoneNumber(strip408AreaCode(parentPhoneNumber))
