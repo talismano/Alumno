@@ -75,7 +75,14 @@ class CreateDirectoryService {
         float yLocation;
 
         Student
-        def students = Student.list([sort: 'lastName', order: 'asc'])
+ //       def students = Student.list([sort: 'lastName', order: 'asc'])
+        def c = Student.createCriteria()
+        def students = c.list {
+            and{
+                order('lastName','asc')
+                order('firstName','asc')
+            }
+        }
         students.each() {
             yLocation = currentColumn.getYLine();
             studentInfo = buildStudentInfo(writer, it);
