@@ -123,9 +123,9 @@ class ImportDataService {
                 listOfStudentsForThisReg.each() { studentMap ->
                     // Search to see if student already exists if so delete that old reg
                     // Decision is to use the latest reg for a student
-                    def duplicateOldStudent = Student.findByLastNameAndFirstName(studentMap.lastName, studentMap.firstName)
+                    def duplicateOldStudent = Student.findByLastNameIlikeAndFirstNameIlike(studentMap.lastName?.trim(), studentMap.firstName?.trim())
                     if (duplicateOldStudent) {
-                        duplicateOldStudent.getRegistration().delete()
+                        duplicateOldStudent.getRegistration().delete(flush: true)
                     }
                     Student theStudent = new Student()
                     def studentLastName = studentMap.lastName ?: " "
