@@ -103,7 +103,7 @@ class ImportDataService {
 
 
     def importOnlineData() {
-        OnlineImportXLS importer = new OnlineImportXLS('/wildcats-6.xlsx')
+        OnlineImportXLS importer = new OnlineImportXLS('/wildcats.xlsx')
         def registrationsMapList = importer.getRegistrations()
         def studentsMapList = importer.getStudents()
         def householdsMapList = importer.getHouseholds()
