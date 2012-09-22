@@ -18,7 +18,6 @@
         <r:layoutResources />
 	</head>
 	<body>
-		<div id="hscLogo" role="banner"><img src="${resource(dir: 'images', file: 'homeschoollogo.jpg')}" alt="HomeAndSchoolClub"/></a></div>
 		<g:layoutBody/>
 		<div class="footer" role="contentinfo"></div>
 		<div id="spinner" class="spinner" style="display:none;"><g:message code="spinner.alt" default="Loading&hellip;"/></div>
