@@ -4,6 +4,7 @@
 <html>
 	<head>
 		<meta name="layout" content="main">
+        <r:require modules="bootstrap"/>
 		<g:set var="entityName" value="${message(code: 'student.label', default: 'Student')}" />
 		<title><g:message code="default.list.label" args="[entityName]" /></title>
 	</head>

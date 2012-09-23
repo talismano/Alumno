@@ -3,6 +3,7 @@
 <html>
 	<head>
 		<meta name="layout" content="main">
+        <r:require modules="bootstrap"/>
 		<g:set var="entityName" value="${message(code: 'registration.label', default: 'Registration')}" />
 		<title><g:message code="default.edit.label" args="[entityName]" /></title>
 	</head>

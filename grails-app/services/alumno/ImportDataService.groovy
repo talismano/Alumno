@@ -131,7 +131,7 @@ class ImportDataService {
                     def studentLastName = studentMap.lastName ?: " "
                     theStudent.setLastName(convertToFirstCaps(studentLastName?.trim()))
                     def studentFirstName = studentMap.firstName ?: " "
-                    theStudent.setFirstName(convertToFirstCaps(studentFirstName?.trim()))
+                    theStudent.setFirstName(convertToFirstCaps(studentFirstName?.trim(),true))
                     def studentGrade = studentMap.grade ?: 13.0
                     theStudent.setGrade(studentGrade.toInteger())
                     def studentPhone = convertToStandardPhoneFormat(studentMap.phoneNumber)
@@ -163,7 +163,7 @@ class ImportDataService {
                         Parent theParent = new Parent()
                         theParent.setLastName(convertToFirstCaps(parentMap.lastName?.trim()))
                         if (parentStrings)
-                            theParent.setFirstName(convertToFirstCaps(parentStrings[0]))
+                            theParent.setFirstName(convertToFirstCaps(parentStrings[0],true))
                         else
                             theParent.setFirstName(null)
                         def parentPhoneNumber = convertToStandardPhoneFormat(parentMap.phoneNumber)
@@ -187,17 +187,22 @@ class ImportDataService {
         }
     }
 
-    def convertToFirstCaps (string) {
+    def convertToFirstCaps (string, checkLength=false) {
         if (string) {
-            if (string.toUpperCase().equals(string) || string.toLowerCase().equals(string)) {
-                final StringBuilder result = new StringBuilder(string.length())
-                String[] words = string.split("\\s")
-                words.eachWithIndex {word, index ->
-                    if (index > 0)
-                        result.append(" ")
-                    result.append(Character.toUpperCase(word.charAt(0))).append(word.substring(1).toLowerCase())
+            if ((string.toUpperCase().equals(string) || string.toLowerCase().equals(string))) {
+                if (checkLength && string.length() < 3) {
+                    return string
                 }
-                return result.toString()
+                else {
+                    final StringBuilder result = new StringBuilder(string.length())
+                    String[] words = string.split("\\s")
+                    words.eachWithIndex {word, index ->
+                        if (index > 0)
+                            result.append(" ")
+                        result.append(Character.toUpperCase(word.charAt(0))).append(word.substring(1).toLowerCase())
+                    }
+                    return result.toString()
+                }
             }
         }
         return string
