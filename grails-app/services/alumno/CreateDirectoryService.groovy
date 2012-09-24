@@ -20,6 +20,8 @@ import com.itextpdf.text.pdf.PdfPTable;
 import com.itextpdf.text.pdf.PdfPageEventHelper;
 import com.itextpdf.text.pdf.PdfWriter;
 import com.itextpdf.text.pdf.draw.DottedLineSeparator
+import com.itextpdf.text.Image
+import com.itextpdf.text.PageSize
 
 
 class CreateDirectoryService {
@@ -58,6 +60,17 @@ class CreateDirectoryService {
 
         writeStudentRecords(writer, document);
         writeDifferentNamedParentsResults(writer,document);
+        if (writer.getPageNumber() % 2) {
+            document.newPage(); //add another page when the last page is odd number
+        }
+        writer.setPageEvent(null);
+        document.newPage(); // back inside cover
+        writer.setPageEmpty(false)
+        document.newPage(); // back cover
+        Image img = Image.getInstance("/BackCoverLGHS.png");
+        img.setAbsolutePosition(100, 300); // just hardcoded location where it looks good
+        PdfContentByte canvas = writer.getDirectContent();
+        canvas.addImage(img);
 
         document.close();
     }
