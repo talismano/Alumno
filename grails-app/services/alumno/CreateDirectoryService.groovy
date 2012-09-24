@@ -67,7 +67,7 @@ class CreateDirectoryService {
         document.newPage(); // back inside cover
         writer.setPageEmpty(false)
         document.newPage(); // back cover
-        Image img = Image.getInstance("/BackCoverLGHS.png");
+        Image img = Image.getInstance("web-app/images/BackCoverLGHS.png");
         img.setAbsolutePosition(100, 300); // just hardcoded location where it looks good
         PdfContentByte canvas = writer.getDirectContent();
         canvas.addImage(img);
