@@ -21,7 +21,7 @@ import com.itextpdf.text.pdf.PdfPageEventHelper;
 import com.itextpdf.text.pdf.PdfWriter;
 import com.itextpdf.text.pdf.draw.DottedLineSeparator
 import com.itextpdf.text.Image
-import com.itextpdf.text.PageSize
+import org.hibernate.criterion.Order
 
 
 class CreateDirectoryService {
@@ -88,11 +88,11 @@ class CreateDirectoryService {
         float yLocation;
 
         Student
- //       def students = Student.list([sort: 'lastName', order: 'asc'])
         def c = Student.createCriteria()
         def students = c.list {
             and{
-                order('lastName','asc')
+                order(new Order('lastName',true).ignoreCase())
+                //order('lastName','asc')
                 order('firstName','asc')
             }
         }
