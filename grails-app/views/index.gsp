@@ -20,9 +20,10 @@
 
     <div class="row">
         <div class="span6 offset2">
-        <g:link controller="Registration" action="importOnlineData"><input type="button" value="Import Online Data" class="btn"/></g:link>
-        <g:link controller="Registration" action="importHSData"><input type="button" value="Import High School Data" class="btn"/></g:link>
-        <g:link controller="Registration" action="createPDF"><input type="button" value="Create Directory" class="btn"/></g:link>
+            <g:link controller="Registration" action="importOnlineData"><input type="button" value="Import Online Data" class="btn"/></g:link>
+            <g:link controller="Registration" action="importHSData"><input type="button" value="Import High School Data" class="btn"/></g:link>
+            <g:link controller="Registration" action="createPDF"><input type="button" value="Create Directory" class="btn"/></g:link>
+            <g:link controller="Registration" action="concatenatePDF"><input type="button" value="Concatenate PDFs" class="btn"/></g:link>
         </div>
     </div>
     <div class="row"><br></div>

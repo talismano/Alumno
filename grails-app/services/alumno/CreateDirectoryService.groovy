@@ -22,6 +22,8 @@ import com.itextpdf.text.pdf.PdfWriter;
 import com.itextpdf.text.pdf.draw.DottedLineSeparator
 import com.itextpdf.text.Image
 import org.hibernate.criterion.Order
+import com.itextpdf.text.pdf.PdfCopy
+import com.itextpdf.text.pdf.PdfReader
 
 
 class CreateDirectoryService {
@@ -29,6 +31,31 @@ class CreateDirectoryService {
     public static final float[][] COLUMNS = [[36, 36, 185, 562] , [ 209, 36, 358, 562 ]]
 
     def MAX_NUM_OF_PARENT_ROWS = 34
+
+    def concatenatePDF() {
+        Document document = new Document();
+        PdfCopy copy = new PdfCopy(document, new FileOutputStream("CompleteWildcats2012.pdf"));
+        document.open();
+        PdfReader reader;
+        int n;
+        reader = new PdfReader("TOCWildcats2012.pdf");
+        n = reader.getNumberOfPages();
+        for (int page = 0; page < n; ) {
+            copy.addPage(copy.getImportedPage(reader, ++page));
+        }
+        copy.freeReader(reader);
+
+        reader = new PdfReader("wildcats2012.pdf");
+        n = reader.getNumberOfPages();
+        for (int page = 0; page < n; ) {
+            copy.addPage(copy.getImportedPage(reader, ++page));
+        }
+        copy.freeReader(reader);
+
+        // step 5
+        document.close();
+    }
+
 
     def createPDF() {
         // Now setup PDF output document
