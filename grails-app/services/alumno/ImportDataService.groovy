@@ -12,7 +12,7 @@ class ImportDataService {
             "Ben Lomond":"BL"]
 
     def importHighSchoolData() {
-        StudentImportHighSchoolXLS importer = new StudentImportHighSchoolXLS('/lghsStudents.xlsx')
+        StudentImportHighSchoolXLS importer = new StudentImportHighSchoolXLS('lghsStudents.xlsx')
         def studentsMapList = importer.getStudents()
         for (it in studentsMapList) {
             if (!it.denied) {
@@ -103,7 +103,7 @@ class ImportDataService {
 
 
     def importOnlineData() {
-        OnlineImportXLS importer = new OnlineImportXLS('/wildcats.xlsx')
+        OnlineImportXLS importer = new OnlineImportXLS('wildcats.xlsx')
         def registrationsMapList = importer.getRegistrations()
         def studentsMapList = importer.getStudents()
         def householdsMapList = importer.getHouseholds()
@@ -124,7 +124,7 @@ class ImportDataService {
                     // Search to see if student already exists if so delete that old reg
                     // Decision is to use the latest reg for a student
                     def duplicateOldStudent = Student.findByLastNameIlikeAndFirstNameIlike(studentMap.lastName?.trim(), studentMap.firstName?.trim())
-                    if (duplicateOldStudent) {
+                    if (duplicateOldStudent?.grade == studentMap.grade) {
                         duplicateOldStudent.getRegistration().delete(flush: true)
                     }
                     Student theStudent = new Student()
