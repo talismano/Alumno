@@ -52,7 +52,6 @@ class CreateDirectoryService {
         }
         copy.freeReader(reader);
 
-        // step 5
         document.close();
     }
 
