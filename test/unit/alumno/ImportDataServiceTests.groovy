@@ -30,6 +30,7 @@ class ImportDataServiceTests {
         def basicString = "555-1212"
         def dotStringNoAreaCode = "555.1212"
         def bunchedStringNoAreaCode = "5551212"
+        def nullString = null
         assert niceString == importData.convertToStandardPhoneFormat(niceString)
         assert niceString == importData.convertToStandardPhoneFormat(bunchedString)
         assert niceString == importData.convertToStandardPhoneFormat(dotString)
@@ -38,6 +39,7 @@ class ImportDataServiceTests {
         assert basicString == importData.convertToStandardPhoneFormat(basicString)
         assert basicString == importData.convertToStandardPhoneFormat(dotStringNoAreaCode)
         assert basicString == importData.convertToStandardPhoneFormat(bunchedStringNoAreaCode)
+        assert nullString == importData.convertToStandardPhoneFormat(nullString)
     }
 
     void testConvertToFirstCaps() {

@@ -33,87 +33,83 @@ class CreateDirectoryService {
     def MAX_NUM_OF_PARENT_ROWS = 34
 
     def concatenatePDF() {
-        Document document = new Document();
-        PdfCopy copy = new PdfCopy(document, new FileOutputStream("CompleteWildcats2012.pdf"));
-        document.open();
-        PdfReader reader;
-        int n;
-        reader = new PdfReader("TOCWildcats2012.pdf");
-        n = reader.getNumberOfPages();
-        for (int page = 0; page < n; ) {
-            copy.addPage(copy.getImportedPage(reader, ++page));
+        Document document = new Document()
+        PdfCopy copy = new PdfCopy(document, new FileOutputStream("CompleteWildcats2012.pdf"))
+        document.open()
+        def pageNum = 0
+        PdfReader reader = new PdfReader("TOCWildcats2012.pdf");
+        while (pageNum < reader.getNumberOfPages())  {
+            copy.addPage(copy.getImportedPage(reader, ++pageNum))
+        }
+        copy.freeReader(reader)
+
+        reader = new PdfReader("wildcats2012.pdf")
+        pageNum = 0
+        while (pageNum < reader.getNumberOfPages())  {
+            copy.addPage(copy.getImportedPage(reader, ++pageNum))
         }
         copy.freeReader(reader);
 
-        reader = new PdfReader("wildcats2012.pdf");
-        n = reader.getNumberOfPages();
-        for (int page = 0; page < n; ) {
-            copy.addPage(copy.getImportedPage(reader, ++page));
-        }
-        copy.freeReader(reader);
-
-        document.close();
+        document.close()
     }
 
 
     def createPDF() {
         // Now setup PDF output document
-        Rectangle pagesize = new Rectangle(394f, 612f);
-        Document document = new Document(pagesize, 36f, 36f, 18f, 18f);
-        PdfWriter writer = PdfWriter.getInstance(document, new FileOutputStream("wildcats2012.pdf"));
+        Rectangle pagesize = new Rectangle(394f, 612f)
+        Document document = new Document(pagesize, 36f, 36f, 18f, 18f)
+        PdfWriter writer = PdfWriter.getInstance(document, new FileOutputStream("wildcats2012.pdf"))
         writer.setBoxSize("page", pagesize);
         writer.setPageEvent( { Object[] args ->
-            PdfContentByte canvas = writer.getDirectContent();
-            canvas.beginText();
-            Font times = new Font(FontFamily.TIMES_ROMAN, 10);
-            BaseFont bf_times = times.getCalculatedBaseFont(false);
-            canvas.setFontAndSize(bf_times, 10);
+            PdfContentByte canvas = writer.getDirectContent()
+            canvas.beginText()
+            Font times = new Font(FontFamily.TIMES_ROMAN, 10)
+            BaseFont bf_times = times.getCalculatedBaseFont(false)
+            canvas.setFontAndSize(bf_times, 10)
             switch(writer.getPageNumber() % 2) {
                 case 0:
-                    canvas.showTextAligned(Element.ALIGN_LEFT, String.format("%d",writer.getPageNumber()), 40, 36, 0);
+                    canvas.showTextAligned(Element.ALIGN_LEFT, String.format("%d",writer.getPageNumber()), 40, 36, 0)
                     break;
                 case 1:
-                    canvas.showTextAligned(Element.ALIGN_RIGHT, String.format("%d",writer.getPageNumber()), 330, 36, 0);
+                    canvas.showTextAligned(Element.ALIGN_RIGHT, String.format("%d",writer.getPageNumber()), 330, 36, 0)
                     break;
             }
             canvas.endText()
             } as PdfPageEventHelper
         )
 
-        document.open();
+        document.open()
 
-        writer.setCompressionLevel(0);
+        writer.setCompressionLevel(0)
 
-        writeStudentRecords(writer, document);
-        writeDifferentNamedParentsResults(writer,document);
+        writeStudentRecords(writer, document)
+        writeDifferentNamedParentsResults(writer,document)
         if (writer.getPageNumber() % 2) {
             document.newPage(); //add another page when the last page is odd number
         }
-        writer.setPageEvent(null);
-        document.newPage(); // back inside cover
+        writer.setPageEvent(null)
+        document.newPage() // back inside cover
         writer.setPageEmpty(false)
-        document.newPage(); // back cover
-        Image img = Image.getInstance("web-app/images/BackCoverLGHS.png");
-        img.setAbsolutePosition(100, 300); // just hardcoded location where it looks good
-        PdfContentByte canvas = writer.getDirectContent();
-        canvas.addImage(img);
+        document.newPage() // back cover
+        Image img = Image.getInstance("web-app/images/BackCoverLGHS.png")
+        img.setAbsolutePosition(100, 300) // just hardcoded location where it looks good
+        PdfContentByte canvas = writer.getDirectContent()
+        canvas.addImage(img)
 
-        document.close();
+        document.close()
     }
 
     public void writeStudentRecords(PdfWriter writer, Document document) throws DocumentException, BadElementException, MalformedURLException, IOException {
 
-        ColumnText currentColumn = new ColumnText(writer.getDirectContent());
-        int column = 0;
+        ColumnText currentColumn = new ColumnText(writer.getDirectContent())
+        int column = 0
         currentColumn.setSimpleColumn(
-                COLUMNS[column][0], COLUMNS[column][1],
-                COLUMNS[column][2], COLUMNS[column][3]);
-        currentColumn.setLeading(9f);
-        int status = ColumnText.START_COLUMN;
-        Paragraph studentInfo;
-        float yLocation;
+                COLUMNS[column][0], COLUMNS[column][1], COLUMNS[column][2], COLUMNS[column][3]);
+        currentColumn.setLeading(9f)
+        int status = ColumnText.START_COLUMN
+        Paragraph studentInfo
+        float yLocation
 
-        Student
         def c = Student.createCriteria()
         def students = c.list {
             and{
@@ -123,42 +119,41 @@ class CreateDirectoryService {
             }
         }
         students.each() {
-            yLocation = currentColumn.getYLine();
-            studentInfo = buildStudentInfo(writer, it);
+            yLocation = currentColumn.getYLine()
+            studentInfo = buildStudentInfo(writer, it)
             if (!studentInfo.isEmpty()) {
-                currentColumn.addText(studentInfo);
-                status = currentColumn.go(true);
+                currentColumn.addText(studentInfo)
+                status = currentColumn.go(true)
                 if (ColumnText.hasMoreText(status)) {
-                    column = Math.abs(column - 1);
+                    column = Math.abs(column - 1)
                     if (column == 0)
-                        document.newPage();
+                        document.newPage()
                     currentColumn.setSimpleColumn(
-                            COLUMNS[column][0], COLUMNS[column][1],
-                            COLUMNS[column][2], COLUMNS[column][3]);
-                    yLocation = COLUMNS[column][3];
+                            COLUMNS[column][0], COLUMNS[column][1], COLUMNS[column][2], COLUMNS[column][3])
+                    yLocation = COLUMNS[column][3]
                 }
-                currentColumn.setYLine(yLocation);
-                currentColumn.setText(studentInfo);
-                status = currentColumn.go(false);
+                currentColumn.setYLine(yLocation)
+                currentColumn.setText(studentInfo)
+                status = currentColumn.go(false)
             }
         }
     }
 
     public Paragraph buildStudentInfo(PdfWriter writer, Student currentStudent) throws BadElementException, MalformedURLException, IOException, DocumentException {
 
-        Paragraph para = new Paragraph();
+        Paragraph para = new Paragraph()
         try {
-            para.setFont(FontFactory.getFont(FontFactory.TIMES_ROMAN, FontFactory.defaultEncoding, 9));
+            para.setFont(FontFactory.getFont(FontFactory.TIMES_ROMAN, FontFactory.defaultEncoding, 9))
 
-            String finalData = null;
-            Chunk studentName = null;
+            String finalData = null
+            Chunk studentName = null
 
             // Build initial row for student name and home number
-            Font font = new Font(FontFamily.TIMES_ROMAN, 9, Font.BOLD);
+            Font font = new Font(FontFamily.TIMES_ROMAN, 9, Font.BOLD)
             def currentStudentName = currentStudent.getLastName() + ", " + currentStudent.getFirstName()
             studentName = new Chunk(currentStudentName, font)
             para.add(studentName)
-            para.add(new Chunk(new DottedLineSeparator()));
+            para.add(new Chunk(new DottedLineSeparator()))
 
             def houseHoldsList = currentStudent.getRegistration()?.getHouseholds()
             houseHoldsList.eachWithIndex { currentHousehold, i ->
@@ -171,28 +166,28 @@ class CreateDirectoryService {
                     para.add("\r")
 
                     // Student grade and cell phone number
-                    def studentInfo = new StringBuilder(currentStudent.getGrade().toString());
-                    studentInfo.append("th grade");
+                    def studentInfo = new StringBuilder(currentStudent.getGrade().toString())
+                    studentInfo.append("th grade")
 
                     def studentCellNum = currentStudent.getPhoneNumber()
                     if (studentCellNum) {
-                        studentInfo.append(", " + studentCellNum);
+                        studentInfo.append(", " + studentCellNum)
                     }
-                    studentInfo.append("\r");
+                    studentInfo.append("\r")
 
                     // Student email
                     def studentEmail = currentStudent.getEmail()
                     if (studentEmail) {
-                        studentInfo.append(studentEmail);
-                        studentInfo.append("\r");
+                        studentInfo.append(studentEmail)
+                        studentInfo.append("\r")
                     }
 
                     para.add(studentInfo.toString());
 
                     // Safehouse indicator
                     if (currentHousehold.getSafehome()) {
-                        Phrase houseGlyph = new Phrase("J ", FontFactory.getFont(FontFactory.ZAPFDINGBATS, FontFactory.defaultEncoding, true, 10));
-                        para.add(houseGlyph);
+                        Phrase houseGlyph = new Phrase("J ", FontFactory.getFont(FontFactory.ZAPFDINGBATS, FontFactory.defaultEncoding, true, 10))
+                        para.add(houseGlyph)
                     }
                 }
 
@@ -216,7 +211,7 @@ class CreateDirectoryService {
                 // Current household address line
                 String householdAddress = buildHouseholdAddress(currentHousehold.getAddress(), currentHousehold.getCity(), currentHousehold.getZip())
                 if (householdAddress)
-                    para.add(householdAddress + "\r");
+                    para.add(householdAddress + "\r")
 
                 // Get parents phone and email from current household
                 householdParents.each{ currentParent->
@@ -245,18 +240,18 @@ class CreateDirectoryService {
     public String buildHouseholdAddress(String parentAddress, String parentCity, String parentZip) {
         StringBuilder parentAddressBuffer
         if (parentAddress) {
-            parentAddressBuffer = new StringBuilder(parentAddress);
+            parentAddressBuffer = new StringBuilder(parentAddress)
             if (!parentCity.isEmpty()) {
-                parentAddressBuffer.append(", " + parentCity);
+                parentAddressBuffer.append(", " + parentCity)
             }
-            parentAddressBuffer.append(", ");
-            parentAddressBuffer.append(parentZip);
+            parentAddressBuffer.append(", ")
+            parentAddressBuffer.append(parentZip)
 
         }
         else
-            parentAddressBuffer = new StringBuilder("");    // no info
+            parentAddressBuffer = new StringBuilder("")    // no info
 
-        return parentAddressBuffer.toString();
+        return parentAddressBuffer.toString()
     }
 
 
@@ -270,71 +265,71 @@ class CreateDirectoryService {
                     document.add(table)
                 table = createNewPageForDifferentNamedParent(document)
             }
-            def cell = new PdfPCell(new Phrase((differentParent[0].toString()),FontFactory.getFont(FontFactory.TIMES_ROMAN, 9)));
+            def cell = new PdfPCell(new Phrase((differentParent[0].toString()),FontFactory.getFont(FontFactory.TIMES_ROMAN, 9)))
             cell.setBorderColor(BaseColor.GRAY)
-            table.addCell(cell);
-            cell = new PdfPCell(new Phrase((differentParent[1].toString()),FontFactory.getFont(FontFactory.TIMES_ROMAN, 9)));
+            table.addCell(cell)
+            cell = new PdfPCell(new Phrase((differentParent[1].toString()),FontFactory.getFont(FontFactory.TIMES_ROMAN, 9)))
             cell.setBorderColor(BaseColor.GRAY)
-            table.addCell(cell);
-            cell = new PdfPCell(new Phrase((differentParent[2].toString()),FontFactory.getFont(FontFactory.TIMES_ROMAN, 9)));
+            table.addCell(cell)
+            cell = new PdfPCell(new Phrase((differentParent[2].toString()),FontFactory.getFont(FontFactory.TIMES_ROMAN, 9)))
             cell.setBorderColor(BaseColor.GRAY)
-            table.addCell(cell);
-            cell = new PdfPCell(new Phrase((differentParent[3].toString()),FontFactory.getFont(FontFactory.TIMES_ROMAN, 9)));
+            table.addCell(cell)
+            cell = new PdfPCell(new Phrase((differentParent[3].toString()),FontFactory.getFont(FontFactory.TIMES_ROMAN, 9)))
             cell.setBorderColor(BaseColor.GRAY)
-            table.addCell(cell);
+            table.addCell(cell)
         }
         document.add(table) //last partial table
     }
 
     def createNewPageForDifferentNamedParent(document) {
-        PdfPTable table = new PdfPTable(4);
-        table.setWidthPercentage(100);
+        def table = new PdfPTable(4)
+        table.setWidthPercentage(100)
         float[] columnWidths = [100f, 120f, 110f, 90f]
-        table.setWidths(columnWidths);
-        table.getDefaultCell().setHorizontalAlignment(Element.ALIGN_CENTER);
+        table.setWidths(columnWidths)
+        table.getDefaultCell().setHorizontalAlignment(Element.ALIGN_CENTER)
 
-        document.newPage();
-        writeDifferentNamedParentHeader(table);
-        table.getDefaultCell().setHorizontalAlignment(Element.ALIGN_LEFT);
+        document.newPage()
+        writeDifferentNamedParentHeader(table)
+        table.getDefaultCell().setHorizontalAlignment(Element.ALIGN_LEFT)
         return table
     }
 
     public void writeDifferentNamedParentHeader(PdfPTable table) {
         // we add a cell with title
-        Phrase title = new Phrase("Parents With Last Names Different From Students", FontFactory.getFont(FontFactory.TIMES_BOLD, 14));
-        PdfPCell cell = new PdfPCell();
-        cell.setColspan(4);
-        cell.addElement(title);
-        table.addCell(cell);
+        Phrase title = new Phrase("Parents With Last Names Different From Students", FontFactory.getFont(FontFactory.TIMES_BOLD, 14))
+        def cell = new PdfPCell()
+        cell.setColspan(4)
+        cell.addElement(title)
+        table.addCell(cell)
         // now we add a cell with parent title
-        Phrase parentHeader = new Phrase("Parent", FontFactory.getFont(FontFactory.TIMES_ROMAN, 14));
-        cell = new PdfPCell();
-        cell.setColspan(2);
-        cell.addElement(parentHeader);
-        cell.setHorizontalAlignment(Element.ALIGN_CENTER);
-        table.addCell(cell);
+        def parentHeader = new Phrase("Parent", FontFactory.getFont(FontFactory.TIMES_ROMAN, 14))
+        cell = new PdfPCell()
+        cell.setColspan(2)
+        cell.addElement(parentHeader)
+        cell.setHorizontalAlignment(Element.ALIGN_CENTER)
+        table.addCell(cell)
         // now we add a cell with student title
-        Phrase studentHeader = new Phrase("Student", FontFactory.getFont(FontFactory.TIMES_ROMAN, 14));
-        cell = new PdfPCell();
-        cell.setColspan(2);
-        cell.addElement(studentHeader);
-        cell.setHorizontalAlignment(Element.ALIGN_CENTER);
-        table.addCell(cell);
+        Phrase studentHeader = new Phrase("Student", FontFactory.getFont(FontFactory.TIMES_ROMAN, 14))
+        cell = new PdfPCell()
+        cell.setColspan(2)
+        cell.addElement(studentHeader)
+        cell.setHorizontalAlignment(Element.ALIGN_CENTER)
+        table.addCell(cell)
         // now "Last Name" and "First Name" headers
-        Phrase lastNameTitle = new Phrase("Last Name", FontFactory.getFont(FontFactory.TIMES_BOLD, 10));
-        Phrase firstNameTitle = new Phrase("First Name", FontFactory.getFont(FontFactory.TIMES_BOLD, 10));
-        cell = new PdfPCell();
-        cell.addElement(lastNameTitle);
-        table.addCell(cell);
-        cell = new PdfPCell();
-        cell.addElement(firstNameTitle);
-        table.addCell(cell);
-        cell = new PdfPCell();
-        cell.addElement(lastNameTitle);
-        table.addCell(cell);
-        cell = new PdfPCell();
-        cell.addElement(firstNameTitle);
-        table.addCell(cell);
+        Phrase lastNameTitle = new Phrase("Last Name", FontFactory.getFont(FontFactory.TIMES_BOLD, 10))
+        Phrase firstNameTitle = new Phrase("First Name", FontFactory.getFont(FontFactory.TIMES_BOLD, 10))
+        cell = new PdfPCell()
+        cell.addElement(lastNameTitle)
+        table.addCell(cell)
+        cell = new PdfPCell()
+        cell.addElement(firstNameTitle)
+        table.addCell(cell)
+        cell = new PdfPCell()
+        cell.addElement(lastNameTitle)
+        table.addCell(cell)
+        cell = new PdfPCell()
+        cell.addElement(firstNameTitle)
+        table.addCell(cell)
     }
 
     def buildParentsWithDifferentLastNames(){

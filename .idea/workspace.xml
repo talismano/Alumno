@@ -1,11 +1,42 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="1054edd9-bab1-479c-8f66-56ceca111c2c" name="Default" comment="">
+    <list default="true" id="1054edd9-bab1-479c-8f66-56ceca111c2c" name="Default" comment="remove bad comment">
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/grails-app/services/alumno/ExportDataService.groovy" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/alumno/alumno/Household$__clinit__closure1.class" afterPath="$PROJECT_DIR$/out/production/alumno/alumno/Household$__clinit__closure1.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/alumno/alumno/Household.class" afterPath="$PROJECT_DIR$/out/production/alumno/alumno/Household.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/alumno/alumno/Parent$__clinit__closure1.class" afterPath="$PROJECT_DIR$/out/production/alumno/alumno/Parent$__clinit__closure1.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/alumno/alumno/Parent.class" afterPath="$PROJECT_DIR$/out/production/alumno/alumno/Parent.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/alumno/alumno/Registration$__clinit__closure1.class" afterPath="$PROJECT_DIR$/out/production/alumno/alumno/Registration$__clinit__closure1.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/alumno/alumno/Registration.class" afterPath="$PROJECT_DIR$/out/production/alumno/alumno/Registration.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/alumno/alumno/Student$__clinit__closure1.class" afterPath="$PROJECT_DIR$/out/production/alumno/alumno/Student$__clinit__closure1.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/alumno/alumno/Student.class" afterPath="$PROJECT_DIR$/out/production/alumno/alumno/Student.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/ApplicationResources.class" afterPath="$PROJECT_DIR$/target/classes/ApplicationResources.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/BootStrap.class" afterPath="$PROJECT_DIR$/target/classes/BootStrap.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/BuildConfig.class" afterPath="$PROJECT_DIR$/target/classes/BuildConfig.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/Config.class" afterPath="$PROJECT_DIR$/target/classes/Config.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/DataSource.class" afterPath="$PROJECT_DIR$/target/classes/DataSource.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/UrlMappings.class" afterPath="$PROJECT_DIR$/target/classes/UrlMappings.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/alumno/Household.class" afterPath="$PROJECT_DIR$/target/classes/alumno/Household.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/alumno/HouseholdController.class" afterPath="$PROJECT_DIR$/target/classes/alumno/HouseholdController.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/alumno/Parent.class" afterPath="$PROJECT_DIR$/target/classes/alumno/Parent.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/alumno/ParentController.class" afterPath="$PROJECT_DIR$/target/classes/alumno/ParentController.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/alumno/Registration.class" afterPath="$PROJECT_DIR$/target/classes/alumno/Registration.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/alumno/RegistrationController.class" afterPath="$PROJECT_DIR$/target/classes/alumno/RegistrationController.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/alumno/Student.class" afterPath="$PROJECT_DIR$/target/classes/alumno/Student.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/alumno/StudentController.class" afterPath="$PROJECT_DIR$/target/classes/alumno/StudentController.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/resources.class" afterPath="$PROJECT_DIR$/target/classes/resources.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/alumno-grailsPlugins.iml" afterPath="$PROJECT_DIR$/alumno-grailsPlugins.iml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/alumno.iml" afterPath="$PROJECT_DIR$/alumno.iml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/application.properties" afterPath="$PROJECT_DIR$/application.properties" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/grails-app/controllers/alumno/RegistrationController.groovy" afterPath="$PROJECT_DIR$/grails-app/controllers/alumno/RegistrationController.groovy" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/grails-app/services/alumno/CreateDirectoryService.groovy" afterPath="$PROJECT_DIR$/grails-app/services/alumno/CreateDirectoryService.groovy" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/grails-app/services/alumno/ImportDataService.groovy" afterPath="$PROJECT_DIR$/grails-app/services/alumno/ImportDataService.groovy" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/grails-app/views/index.gsp" afterPath="$PROJECT_DIR$/grails-app/views/index.gsp" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/application.properties" afterPath="$PROJECT_DIR$/target/classes/application.properties" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/stacktrace.log" afterPath="$PROJECT_DIR$/target/stacktrace.log" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/test/unit/alumno/ImportDataServiceTests.groovy" afterPath="$PROJECT_DIR$/test/unit/alumno/ImportDataServiceTests.groovy" />
     </list>
     <list id="05aebbce-3221-4e32-a99d-d105b9e2a00f" name="Rejected commit: Default" comment="initial" />
     <list id="34d04cf0-9c8a-4260-b790-4e0e772ea1f2" name="Rejected commit: Default (2)" comment="initial" />
@@ -19,6 +50,9 @@
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
   <component name="ChangesViewManager" flattened_view="true" show_ignored="false" />
+  <component name="CoverageDataManager">
+    <SUITE FILE_PATH="coverage/alumno$Grails_alumno.coverage" NAME="Grails:alumno Coverage Results" MODIFIED="1350267016995" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" />
+  </component>
   <component name="CreatePatchCommitExecutor">
     <option name="PATCH_PATH" value="" />
   </component>
@@ -26,6 +60,34 @@
     <disable_hints />
   </component>
   <component name="DebuggerManager">
+    <line_breakpoints>
+      <breakpoint url="file://$PROJECT_DIR$/grails-app/services/alumno/ExportDataService.groovy" line="30" class="alumno.ExportDataService" package="alumno">
+        <option name="ENABLED" value="false" />
+        <option name="LOG_ENABLED" value="false" />
+        <option name="LOG_EXPRESSION_ENABLED" value="false" />
+        <option name="SUSPEND_POLICY" value="SuspendAll" />
+        <option name="COUNT_FILTER_ENABLED" value="false" />
+        <option name="COUNT_FILTER" value="0" />
+        <option name="CONDITION_ENABLED" value="false" />
+        <option name="CLASS_FILTERS_ENABLED" value="false" />
+        <option name="INSTANCE_FILTERS_ENABLED" value="false" />
+        <option name="CONDITION" value="&#13;&#13;Groovy" />
+        <option name="LOG_MESSAGE" value="&#13;&#13;Groovy" />
+      </breakpoint>
+      <breakpoint url="file://$PROJECT_DIR$/grails-app/services/alumno/ImportDataService.groovy" line="146" class="alumno.ImportDataService" package="alumno">
+        <option name="ENABLED" value="true" />
+        <option name="LOG_ENABLED" value="false" />
+        <option name="LOG_EXPRESSION_ENABLED" value="false" />
+        <option name="SUSPEND_POLICY" value="SuspendAll" />
+        <option name="COUNT_FILTER_ENABLED" value="false" />
+        <option name="COUNT_FILTER" value="0" />
+        <option name="CONDITION_ENABLED" value="true" />
+        <option name="CLASS_FILTERS_ENABLED" value="false" />
+        <option name="INSTANCE_FILTERS_ENABLED" value="false" />
+        <option name="CONDITION" value="householdMap.city == &quot;20&quot;&#13;&#13;Groovy" />
+        <option name="LOG_MESSAGE" value="&#13;&#13;Groovy" />
+      </breakpoint>
+    </line_breakpoints>
     <breakpoint_any>
       <breakpoint>
         <option name="NOTIFY_CAUGHT" value="true" />
@@ -83,19 +145,10 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="CreateDirectoryService.groovy" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="CreateDirectoryService.groovy" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/grails-app/services/alumno/CreateDirectoryService.groovy">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="48" column="47" selection-start="1677" selection-end="1677" vertical-scroll-proportion="0.6432247">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="index.gsp" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/grails-app/views/index.gsp">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="25" column="114" selection-start="1110" selection-end="1110" vertical-scroll-proportion="-8.125">
+            <state line="335" column="36" selection-start="14114" selection-end="14136" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
@@ -104,7 +157,34 @@
       <file leaf-file-name="RegistrationController.groovy" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/grails-app/controllers/alumno/RegistrationController.groovy">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="48" column="38" selection-start="1483" selection-end="1483" vertical-scroll-proportion="-16.347826">
+            <state line="34" column="58" selection-start="1051" selection-end="1051" vertical-scroll-proportion="0.0">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Household.groovy" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/grails-app/domain/alumno/Household.groovy">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="6" column="6" selection-start="127" selection-end="127" vertical-scroll-proportion="-3.2608695">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="ExportDataService.groovy" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/grails-app/services/alumno/ExportDataService.groovy">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="32" column="179" selection-start="1683" selection-end="1683" vertical-scroll-proportion="0.68085104">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="BootStrap.groovy" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/grails-app/conf/BootStrap.groovy">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="5" column="6" selection-start="69" selection-end="69" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
@@ -113,7 +193,34 @@
       <file leaf-file-name="ImportDataService.groovy" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/grails-app/services/alumno/ImportDataService.groovy">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="126" column="44" selection-start="6139" selection-end="6139" vertical-scroll-proportion="0.0">
+            <state line="12" column="0" selection-start="279" selection-end="787" vertical-scroll-proportion="-4.0384617">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="StudentImportHighSchoolXLS.groovy" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/groovy/alumno/StudentImportHighSchoolXLS.groovy">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="10" column="0" selection-start="171" selection-end="171" vertical-scroll-proportion="0.0">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="index.gsp" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/grails-app/views/index.gsp">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="26" column="83" selection-start="1189" selection-end="1218" vertical-scroll-proportion="0.0">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Parent.groovy" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/grails-app/domain/alumno/Parent.groovy">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="2" column="6" selection-start="22" selection-end="22" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
@@ -132,9 +239,6 @@
   <component name="IdeDocumentHistory">
     <option name="changedFiles">
       <list>
-        <option value="$PROJECT_DIR$/grails-app/domain/alumno/Household.groovy" />
-        <option value="$PROJECT_DIR$/grails-app/domain/alumno/Parent.groovy" />
-        <option value="$PROJECT_DIR$/grails-app/domain/alumno/Registration.groovy" />
         <option value="$PROJECT_DIR$/grails-app/domain/alumno/Student.groovy" />
         <option value="$PROJECT_DIR$/src/groovy/alumno/OnlineImportXLS.groovy" />
         <option value="$PROJECT_DIR$/src/groovy/alumno/StudentImportHighSchoolXLS.groovy" />
@@ -144,10 +248,13 @@
         <option value="$PROJECT_DIR$/grails-app/views/registration/edit.gsp" />
         <option value="$PROJECT_DIR$/grails-app/views/student/list.gsp" />
         <option value="$PROJECT_DIR$/application.properties" />
-        <option value="$PROJECT_DIR$/grails-app/services/alumno/ImportDataService.groovy" />
+        <option value="$PROJECT_DIR$/grails-app/services/alumno/CreateDirectoryService.groovy" />
+        <option value="$PROJECT_DIR$/test/unit/alumno/ImportDataServiceTests.groovy" />
+        <option value="$PROJECT_DIR$/test/unit/alumno/CreateDirectoryServiceTests.groovy" />
         <option value="$PROJECT_DIR$/grails-app/views/index.gsp" />
         <option value="$PROJECT_DIR$/grails-app/controllers/alumno/RegistrationController.groovy" />
-        <option value="$PROJECT_DIR$/grails-app/services/alumno/CreateDirectoryService.groovy" />
+        <option value="$PROJECT_DIR$/grails-app/services/alumno/ImportDataService.groovy" />
+        <option value="$PROJECT_DIR$/grails-app/services/alumno/ExportDataService.groovy" />
       </list>
     </option>
   </component>
@@ -156,8 +263,8 @@
   </component>
   <component name="ProjectFrameBounds">
     <option name="y" value="22" />
-    <option name="width" value="1440" />
-    <option name="height" value="874" />
+    <option name="width" value="1796" />
+    <option name="height" value="1020" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true">
     <OptionsSetting value="true" id="Add" />
@@ -217,6 +324,34 @@
     </key>
   </component>
   <component name="RunManager" selected="Grails.Grails:alumno">
+    <configuration default="false" name="testStrip408AreaCode()" type="GrailsRunConfigurationType" factoryName="Grails" temporary="true">
+      <module name="alumno" />
+      <setting name="vmparams" value="" />
+      <setting name="cmdLine" value="test-app unit: alumno.ImportDataService.testStrip408AreaCode -echoOut" />
+      <setting name="depsClasspath" value="true" />
+      <setting name="passParentEnv" value="true" />
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
+      <setting name="launchBrowser" value="true" />
+      <RunnerSettings RunnerId="Run" />
+      <ConfigurationWrapper RunnerId="Run" />
+      <method>
+        <option name="Make" enabled="false" />
+      </method>
+    </configuration>
+    <configuration default="false" name="ImportDataServiceTests" type="GrailsRunConfigurationType" factoryName="Grails" temporary="true">
+      <module name="alumno" />
+      <setting name="vmparams" value="" />
+      <setting name="cmdLine" value="test-app unit: alumno.ImportDataService -echoOut" />
+      <setting name="depsClasspath" value="true" />
+      <setting name="passParentEnv" value="true" />
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
+      <setting name="launchBrowser" value="true" />
+      <RunnerSettings RunnerId="Run" />
+      <ConfigurationWrapper RunnerId="Run" />
+      <method>
+        <option name="Make" enabled="false" />
+      </method>
+    </configuration>
     <configuration default="true" type="GrailsRunConfigurationType" factoryName="Grails">
       <module name="" />
       <setting name="vmparams" value="" />
@@ -334,20 +469,52 @@
       <setting name="passParentEnv" value="true" />
       <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
       <setting name="launchBrowser" value="true" />
+      <RunnerSettings RunnerId="Cover" />
       <RunnerSettings RunnerId="Debug">
         <option name="DEBUG_PORT" value="" />
         <option name="TRANSPORT" value="0" />
         <option name="LOCAL" value="true" />
       </RunnerSettings>
       <RunnerSettings RunnerId="Run" />
+      <ConfigurationWrapper RunnerId="Cover" />
       <ConfigurationWrapper RunnerId="Debug" />
       <ConfigurationWrapper RunnerId="Run" />
       <method>
         <option name="Make" enabled="false" />
       </method>
     </configuration>
-    <list size="1">
+    <configuration default="false" name="testConvertToStandardPhoneFormat()" type="GrailsRunConfigurationType" factoryName="Grails">
+      <module name="alumno" />
+      <setting name="vmparams" value="" />
+      <setting name="cmdLine" value="test-app unit: alumno.ImportDataService.testConvertToStandardPhoneFormat -echoOut" />
+      <setting name="depsClasspath" value="true" />
+      <setting name="passParentEnv" value="true" />
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
+      <setting name="launchBrowser" value="true" />
+      <RunnerSettings RunnerId="Run" />
+      <ConfigurationWrapper RunnerId="Run" />
+      <method>
+        <option name="Make" enabled="false" />
+      </method>
+    </configuration>
+    <configuration default="false" name="CreateDirectoryServiceTests" type="GrailsRunConfigurationType" factoryName="Grails">
+      <module name="alumno" />
+      <setting name="vmparams" value="" />
+      <setting name="cmdLine" value="test-app unit: alumno.CreateDirectoryService -echoOut" />
+      <setting name="depsClasspath" value="true" />
+      <setting name="passParentEnv" value="true" />
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
+      <setting name="launchBrowser" value="false" />
+      <RunnerSettings RunnerId="Run" />
+      <ConfigurationWrapper RunnerId="Run" />
+      <method />
+    </configuration>
+    <list size="5">
       <item index="0" class="java.lang.String" itemvalue="Grails.Grails:alumno" />
+      <item index="1" class="java.lang.String" itemvalue="Grails.testConvertToStandardPhoneFormat()" />
+      <item index="2" class="java.lang.String" itemvalue="Grails.testStrip408AreaCode()" />
+      <item index="3" class="java.lang.String" itemvalue="Grails.ImportDataServiceTests" />
+      <item index="4" class="java.lang.String" itemvalue="Grails.CreateDirectoryServiceTests" />
     </list>
     <configuration name="&lt;template&gt;" type="WebApp" default="true" selected="false">
       <Host>localhost</Host>
@@ -630,7 +797,19 @@
       <created>1348545176094</created>
       <updated>1348545176094</updated>
     </task>
-    <option name="localTasksCounter" value="63" />
+    <task id="LOCAL-00063" summary="added ability to concatenate two files, table of contents pdf and generated file to form complete directory">
+      <created>1348547154394</created>
+      <updated>1348547154395</updated>
+    </task>
+    <task id="LOCAL-00064" summary="added unit tests">
+      <created>1349108368202</created>
+      <updated>1349108368202</updated>
+    </task>
+    <task id="LOCAL-00065" summary="remove bad comment">
+      <created>1349108395433</created>
+      <updated>1349108395433</updated>
+    </task>
+    <option name="localTasksCounter" value="66" />
     <servers />
   </component>
   <component name="TodoView" selected-index="0">
@@ -654,35 +833,36 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="0" y="22" width="1440" height="874" extended-state="0" />
+    <frame x="0" y="22" width="1796" height="1020" extended-state="0" />
     <editor active="false" />
     <layout>
       <window_info id="Data Sources" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Changes" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.17264277" sideWeight="0.9993914" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Changes" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.14682981" sideWeight="0.9987864" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="JetGradle" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Persistence" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.42762285" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.42714128" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="IDEtalk Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="12" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="8" side_tool="true" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="5" side_tool="true" content_ui="tabs" />
-      <window_info id="Grails View" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.14849354" sideWeight="0.5325365" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Grails View" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.22742857" sideWeight="0.8531702" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="IDEtalk" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32998565" sideWeight="0.75697213" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32815966" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32802126" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
       <window_info id="Web" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="4" side_tool="true" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32802126" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.14849354" sideWeight="0.28552458" order="1" side_tool="true" content_ui="tabs" />
+      <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.22765197" sideWeight="0.7975392" order="1" side_tool="true" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.19368723" sideWeight="0.500664" order="0" side_tool="false" content_ui="combo" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.24037185" sideWeight="0.99943537" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32441473" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.36818686" sideWeight="0.99943537" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3240372" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
+      <window_info id="Coverage" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32902297" sideWeight="0.7975392" order="3" side_tool="true" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32934928" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32802126" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
     </layout>
   </component>
@@ -723,7 +903,7 @@
     <option name="SHOW_VCS_ERROR_NOTIFICATIONS" value="true" />
     <option name="FORCE_NON_EMPTY_COMMENT" value="false" />
     <option name="CLEAR_INITIAL_COMMIT_MESSAGE" value="false" />
-    <option name="LAST_COMMIT_MESSAGE" value="added additional check for duplicate students must also be same grade (two students with same first and last name exist)" />
+    <option name="LAST_COMMIT_MESSAGE" value="remove bad comment" />
     <option name="MAKE_NEW_CHANGELIST_ACTIVE" value="true" />
     <option name="OPTIMIZE_IMPORTS_BEFORE_PROJECT_COMMIT" value="false" />
     <option name="CHECK_FILES_UP_TO_DATE_BEFORE_COMMIT" value="false" />
@@ -736,9 +916,6 @@
     <option name="UPDATE_GROUP_BY_CHANGELIST" value="false" />
     <option name="SHOW_FILE_HISTORY_AS_TREE" value="false" />
     <option name="FILE_HISTORY_SPLITTER_PROPORTION" value="0.6" />
-    <MESSAGE value="First version that imports online data" />
-    <MESSAGE value="FIrst version of work in progress for pdf generation" />
-    <MESSAGE value="First version that works EXCEPT for parents with different names" />
     <MESSAGE value="First version that does different named parents too (and also pays attention to denied column in High school import)" />
     <MESSAGE value="Documentation for excel import is wrong, row spec is zero based.  Fixed start rows to 0 and 1 respectively for onlne and HS data" />
     <MESSAGE value="Added fix for online entries of names that were done with CAPS LOCK on, convert to first caps.  Also fixed all lower case names into first caps.  Leave alone mixed cap entries." />
@@ -761,6 +938,9 @@
     <MESSAGE value="fixed last name sorting to ignore case for last name i.e von Kaenel should in the V's not after the Z's" />
     <MESSAGE value="changed version to 1.0.1" />
     <MESSAGE value="added additional check for duplicate students must also be same grade (two students with same first and last name exist)" />
+    <MESSAGE value="added ability to concatenate two files, table of contents pdf and generated file to form complete directory" />
+    <MESSAGE value="added unit tests" />
+    <MESSAGE value="remove bad comment" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager />
@@ -770,56 +950,9 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/grails-app/controllers/alumno/HouseholdController.groovy">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="9" column="9" selection-start="266" selection-end="266" vertical-scroll-proportion="-3.2608695" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/grails-app/conf/BootStrap.groovy">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="5" column="6" selection-start="69" selection-end="69" vertical-scroll-proportion="0.0862069" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/grails-app/views/registration/list.gsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="6" column="0" selection-start="111" selection-end="151" vertical-scroll-proportion="-1.4042553" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/grails-app/views/registration/edit.gsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="5" column="40" selection-start="150" selection-end="150" vertical-scroll-proportion="0.16233766" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/web-app/images/homeschoollogo.jpg">
-      <provider selected="true" editor-type-id="images">
-        <state />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/web-app/images/BackCoverLGHS.png">
-      <provider selected="true" editor-type-id="images">
-        <state />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/grails-app/views/student/list.gsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="6" column="40" selection-start="146" selection-end="146" vertical-scroll-proportion="0.0" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/grails-app/controllers/alumno/ParentController.groovy">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="5" column="6" selection-start="131" selection-end="131" vertical-scroll-proportion="0.07042254" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/grails-app/conf/BuildConfig.groovy">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" />
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/application.properties">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="5" column="17" selection-start="134" selection-end="134" vertical-scroll-proportion="0.10653409">
-          <folding />
-        </state>
+        <state line="5" column="17" selection-start="134" selection-end="134" vertical-scroll-proportion="0.10653409" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/grails-app/conf/Config.groovy">
@@ -832,30 +965,84 @@
         <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/grails-app/services/alumno/ImportDataService.groovy">
+    <entry file="file://$PROJECT_DIR$/test/unit/alumno/CreateDirectoryServiceTests.groovy">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="126" column="44" selection-start="6139" selection-end="6139" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
+        <state line="41" column="1" selection-start="1595" selection-end="1595" vertical-scroll-proportion="1.201373" />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/grails-app/views/index.gsp">
+    <entry file="file://$PROJECT_DIR$/grails-app/domain/alumno/Registration.groovy">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="25" column="114" selection-start="1110" selection-end="1110" vertical-scroll-proportion="-8.125">
-          <folding />
-        </state>
+        <state line="5" column="6" selection-start="126" selection-end="126" vertical-scroll-proportion="0.0" />
+      </provider>
+      <provider editor-type-id="org.jetbrains.plugins.grails.perspectives.DomainClassesRelationsEditorProvider">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/groovy/alumno/OnlineImportXLS.groovy">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="14" column="6" selection-start="355" selection-end="355" vertical-scroll-proportion="0.02170767" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/test/unit/alumno/ImportDataServiceTests.groovy">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="20" column="0" selection-start="266" selection-end="603" vertical-scroll-proportion="0.41788855" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/grails-app/controllers/alumno/RegistrationController.groovy">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="48" column="38" selection-start="1483" selection-end="1483" vertical-scroll-proportion="-16.347826">
+        <state line="34" column="58" selection-start="1051" selection-end="1051" vertical-scroll-proportion="0.0" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/grails-app/domain/alumno/Household.groovy">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="6" column="6" selection-start="127" selection-end="127" vertical-scroll-proportion="-3.2608695">
           <folding />
         </state>
+      </provider>
+      <provider editor-type-id="org.jetbrains.plugins.grails.perspectives.DomainClassesRelationsEditorProvider">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/groovy/alumno/StudentImportHighSchoolXLS.groovy">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="10" column="0" selection-start="171" selection-end="171" vertical-scroll-proportion="0.0" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/grails-app/views/index.gsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="26" column="83" selection-start="1189" selection-end="1218" vertical-scroll-proportion="0.0" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/grails-app/domain/alumno/Parent.groovy">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="2" column="6" selection-start="22" selection-end="22" vertical-scroll-proportion="0.0" />
+      </provider>
+      <provider editor-type-id="org.jetbrains.plugins.grails.perspectives.DomainClassesRelationsEditorProvider">
+        <state />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/grails-app/services/alumno/CreateDirectoryService.groovy">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="48" column="47" selection-start="1677" selection-end="1677" vertical-scroll-proportion="0.6432247">
+        <state line="335" column="36" selection-start="14114" selection-end="14136" vertical-scroll-proportion="0.0" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/grails-app/conf/BootStrap.groovy">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="5" column="6" selection-start="69" selection-end="69" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/grails-app/services/alumno/ImportDataService.groovy">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="12" column="0" selection-start="279" selection-end="787" vertical-scroll-proportion="-4.0384617">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/grails-app/services/alumno/ExportDataService.groovy">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="32" column="179" selection-start="1683" selection-end="1683" vertical-scroll-proportion="0.68085104">
           <folding />
         </state>
       </provider>
@@ -868,7 +1055,7 @@
           <value>
             <GrailsSettings>
               <option name="buildConfigCrc" value="-162591795" />
-              <option name="pluginDependenciesCrc" value="-1032415892" />
+              <option name="pluginDependenciesCrc" value="-47709366" />
               <option name="properties">
                 <map>
                   <entry key="grails.global.plugins.dir" value="$USER_HOME$/.grails/2.0.3/global-plugins" />

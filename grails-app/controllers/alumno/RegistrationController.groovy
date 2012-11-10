@@ -51,6 +51,12 @@ class RegistrationController {
         redirect(action: "list")
     }
 
+    def createDistributionSpreadsheet() {
+        def exportData = new ExportDataService()
+        exportData.createDistributionData()
+        redirect(action: "list")
+    }
+
     def save() {
         def registrationInstance = new Registration(params)
         registrationInstance.ipAddress = request.getRemoteAddr()

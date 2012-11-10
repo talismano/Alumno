@@ -77,27 +77,27 @@ class ImportDataService {
         //                          or matches child's last name "van't Hof"
         // Case 3: Tom Smith
 
-        String[] tokens = parentName.split("\\s+");
+        def tokens = parentName.split("\\s+")
 
-        String lastName = null;
-        String firstName = null;
+        String lastName = null
+        String firstName = null
         if (tokens.length > 1){
-            String possibleParentLastName = tokens[tokens.length - 2] + " " + tokens[tokens.length - 1];
+            String possibleParentLastName = tokens[tokens.length - 2] + " " + tokens[tokens.length - 1]
             if (possibleParentLastName.startsWith(childsLastName)) {
-                lastName = possibleParentLastName;
-                firstName = (parentName.substring(0, (parentName.length() - lastName.length()))).trim();
+                lastName = possibleParentLastName
+                firstName = (parentName.substring(0, (parentName.length() - lastName.length()))).trim()
             }
             else {
-                lastName = tokens[tokens.length - 1];
-                firstName = (parentName.substring(0, (parentName.length() - lastName.length()))).trim();
+                lastName = tokens[tokens.length - 1]
+                firstName = (parentName.substring(0, (parentName.length() - lastName.length()))).trim()
             }
         }
         else    //Case where parent cell is "Tom & Susie Smith"   the one token returned for "Tom" is first name
         {
-            firstName = tokens[0];
+            firstName = tokens[0]
         }
-        String[] parentNames = [firstName, lastName]
-        return parentNames;
+        def parentNames = [firstName, lastName]
+        return parentNames
     }
 
 
@@ -144,7 +144,7 @@ class ImportDataService {
                 listOfHouseholdsForThisReg.each() { householdMap ->
                     Household theHousehold = new Household()
                     theHousehold.setAddress(convertToFirstCaps(householdMap.address?.trim()))
-                    def cityAbbreviation = onlineCityList[Integer.valueOf(it.city?.toInteger()?: 1)]
+                    def cityAbbreviation = onlineCityList[Integer.valueOf(householdMap.city?.toInteger()?: 1)]
                     theHousehold.setCity(cityAbbreviation)
                     theHousehold.setZip(householdMap.zip?: "95030")
                     theHousehold.setState('CA')
@@ -212,25 +212,17 @@ class ImportDataService {
 
     def convertToStandardPhoneFormat(String inputNumber) {
          // phone numbers could be multiple formats
-        // 4085551212
-        // 408.555.1212
-        // 408-555-1212
-        // (408) 555-1212
-        // 555-1212
         // First step is to strip out all non numeric characters
         // if remaining string is 7 characters long format without area code otherwise include it
-        if (inputNumber) {
-            String number = inputNumber.replaceAll("[^0-9]", "")
-            if (number.length() < 7)
-                return null //bad entry in the front end
-            if (number.length() == 10 )
-                return String.format("(%s) %s-%s", number.substring(0, 3), number.substring(3, 6), number.substring(6, 10))
-            else
-                return String.format("%s-%s", number.substring(0,3), number.substring(3,7))
 
-        };
-        return inputNumber
-     }
+        String number = inputNumber?.replaceAll("[^0-9]", "")
+        if (number?.length() < 7)
+            return null //bad entry in the front end
+        if (number.length() == 10 )
+            return String.format("(%s) %s-%s", number.substring(0, 3), number.substring(3, 6), number.substring(6, 10))
+        else
+            return String.format("%s-%s", number.substring(0,3), number.substring(3,7))
+ }
 
     public String strip408AreaCode(String numberString) {
             if (numberString?.startsWith("(408)"))
